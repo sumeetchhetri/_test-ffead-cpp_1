@@ -1,11 +1,15 @@
-#summary Quick Start Guide.
+#summary Create a new application in minutes
 
 = Quick Start Guide =
   * Create a new folder in /server/web i.e, appname
   * Modify /server/resources/server.prop to set the port, default application, number of server processes and other essential attributes.
-
-
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+  * Create new folders /lib /components /config /dcp /include under your newly created application folder (appname)
+     * /server/web/appname
+       * /lib
+       * /include
+       * /dcp
+       * /config
+       * /components
+  * Create a new folder in /server/web i.e, appname
+  * Create a new folder in /server/web i.e, appname
+  * Create a new folder in /server/web i.e, appname
