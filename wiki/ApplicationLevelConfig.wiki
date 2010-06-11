@@ -1,0 +1,3 @@
+#summary Configure Applications
+
+= application.xml =
