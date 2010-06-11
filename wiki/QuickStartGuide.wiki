@@ -18,7 +18,7 @@
   * Create /appname/config/cibernate.xml for ORM support [http://code.google.com/p/ffead-cpp/wiki/CibernateConfig]
   * Create /appname/config/application.xml for Dynamic C++ pages,Templates and Dynamic view support [http://code.google.com/p/ffead-cpp/wiki/ApplicationLevelConfig]
   * Create /appname/config/afc.properties for Ajax Support [http://code.google.com/p/ffead-cpp/wiki/AjaxConfig]
-  * Create /appname/config/ws.xml for Web-Service Support [http://code.google.com/p/ffead-cpp/wiki/ServerProperties]
-  * For Business Entities or Business Driven Beans create your custom {{{*}}}.cmp files and drop them inside the /appname/components folder [http://code.google.com/p/ffead-cpp/wiki/ServerProperties]
+  * Create /appname/config/ws.xml for Web-Service Support [http://code.google.com/p/ffead-cpp/wiki/WebServicesConfig]
+  * For Business Entities or Business Driven Beans create your custom {{{*}}}.cmp files and drop them inside the /appname/components folder [http://code.google.com/p/ffead-cpp/wiki/ExampleComponent]
   * Restart the Web Server
   * Watch the magic!!! </font>
