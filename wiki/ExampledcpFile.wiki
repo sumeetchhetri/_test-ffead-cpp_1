@@ -1,0 +1,3 @@
+#summary Example .dcp file
+
+= example.dcp =
