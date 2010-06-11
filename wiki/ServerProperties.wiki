@@ -1,0 +1,3 @@
+#summary The properties for the Application Server.
+
+= server.properties=
