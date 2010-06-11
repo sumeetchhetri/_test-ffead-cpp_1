@@ -1,0 +1,11 @@
+#summary Quick Start Guide.
+
+= Quick Start Guide =
+  * Create a new folder in /server/web i.e, appname
+  * Modify /server/resources/server.prop to set the port, default application, number of server processes and other essential attributes.
+
+
+Add your content here.  Format your content with:
+  * Text in *bold* or _italic_
+  * Headings, paragraphs, and lists
+  * Automatic links to other wiki pages
