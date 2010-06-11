@@ -3,7 +3,7 @@
 = Quick Start Guide = 
 <font size="3" face="Georgia, Arial">
   * Create a new folder in /server/web i.e, appname
-  * Modify /server/resources/server.prop to set the port, default application, number of server processes and other essential attributes [http://code.google.com/p/ffead-cpp/wiki/QuickStartGuide]
+  * Modify /server/resources/server.prop to set the port, default application, number of server processes and other essential attributes [http://code.google.com/p/ffead-cpp/wiki/ServerProperties]
   * Create new folders /lib /components /config /dcp /include under your newly created application folder (appname)
    * /server/web/appname
     # /lib
@@ -15,10 +15,10 @@
   * Drop the shared library of your application inside the /appname/lib folder.
   * Create/Drop your html/tpe files directly in the /appname folder
   * Create/Drop your dcp files in the /appname/dcp folder
-  * Create /appname/config/cibernate.xml for ORM support
-  * Create /appname/config/application.xml for Dynamic C++ pages,Templates and Dynamic view support. 
-  * Create /appname/config/afc.properties for Ajax Support
-  * Create /appname/config/ws.xml for Web-Service Support
-  * For Business Entities or Business Driven Beans create your custom {{{*}}}.cmp files and drop them inside the /appname/components folder
+  * Create /appname/config/cibernate.xml for ORM support [http://code.google.com/p/ffead-cpp/wiki/CibernateConfig]
+  * Create /appname/config/application.xml for Dynamic C++ pages,Templates and Dynamic view support [http://code.google.com/p/ffead-cpp/wiki/ApplicationLevelConfig]
+  * Create /appname/config/afc.properties for Ajax Support [http://code.google.com/p/ffead-cpp/wiki/AjaxConfig]
+  * Create /appname/config/ws.xml for Web-Service Support [http://code.google.com/p/ffead-cpp/wiki/ServerProperties]
+  * For Business Entities or Business Driven Beans create your custom {{{*}}}.cmp files and drop them inside the /appname/components folder [http://code.google.com/p/ffead-cpp/wiki/ServerProperties]
   * Restart the Web Server
   * Watch the magic!!! </font>
