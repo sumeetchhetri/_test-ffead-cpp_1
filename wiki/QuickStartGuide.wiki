@@ -1,7 +1,7 @@
 #summary Create a new application in minutes
 
 = Quick Start Guide =
-  * Create a new folder in /server/web i.e, appname
+  ** Create a new folder in /server/web i.e, appname
   * Modify /server/resources/server.prop to set the port, default application, number of server processes and other essential attributes.
   * Create new folders /lib /components /config /dcp /include under your newly created application folder (appname)
      * /server/web/appname
@@ -18,7 +18,6 @@
   * Create /appname/config/application.xml for Dynamic C++ pages,Templates and Dynamic view support. 
   * Create /appname/config/afc.properties for Ajax Support
   * Create /appname/config/ws.xml for Web-Service Support
-  * For Business Entities or Business Driven Beans create your custom *.cmp files and drop them inside the /appname/components folder
+  * For Business Entities or Business Driven Beans create your custom {{{*}}}.cmp files and drop them inside the /appname/components folder
   * Restart the Web Server
-  * Watch the magic!!! 
-
+  * Watch the magic!!!* 
