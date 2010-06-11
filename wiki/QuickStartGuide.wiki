@@ -4,12 +4,12 @@
   * Create a new folder in /server/web i.e, appname
   * Modify /server/resources/server.prop to set the port, default application, number of server processes and other essential attributes.
   * Create new folders /lib /components /config /dcp /include under your newly created application folder (appname)
-     /server/web/appname
-        /lib
-        /include
-        /dcp
-        /config
-        /components
+   * /server/web/appname
+    # /lib
+    # /include
+    # /dcp
+    # /config
+    # /components
   * Drop all your application level header files intended for Serialization and Reflection enabled support in the /appname/include folder. All files targeted for Web-Services, Ajax, Database mapping, Components, Controllers, Templates, Views etc should have their header definition files present in the /appname/include folder. 
   * Drop the shared library of your application inside the /appname/lib folder.
   * Create/Drop your html/tpe files directly in the /appname folder
