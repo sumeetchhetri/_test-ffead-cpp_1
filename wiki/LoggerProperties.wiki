@@ -1,0 +1,3 @@
+#summary Properties for Application level Logging
+
+= log.properties =
