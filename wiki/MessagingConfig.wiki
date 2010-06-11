@@ -1,0 +1,3 @@
+#summary Configuration file for Messaging Support
+
+= messaging.xml =
