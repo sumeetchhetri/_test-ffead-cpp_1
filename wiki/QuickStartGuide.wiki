@@ -1,6 +1,7 @@
 #summary Create a new application in minutes
 
-= Quick Start Guide =  <font size="3" face="Georgia, Arial">
+= Quick Start Guide = 
+<font size="3" face="Georgia, Arial">
   * Create a new folder in /server/web i.e, appname
   * Modify /server/resources/server.prop to set the port, default application, number of server processes and other essential attributes.
   * Create new folders /lib /components /config /dcp /include under your newly created application folder (appname)
