@@ -1,0 +1,3 @@
+#summary An Example .tpe file
+
+= example.tpe =
