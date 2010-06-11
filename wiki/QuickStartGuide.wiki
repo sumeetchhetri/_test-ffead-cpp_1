@@ -3,7 +3,7 @@
 = Quick Start Guide = 
 <font size="3" face="Georgia, Arial">
   * Create a new folder in /server/web i.e, appname
-  * Modify /server/resources/server.prop to set the port, default application, number of server processes and other essential attributes [http://code.google.com/p/ffead-cpp/wiki/ServerProperties]
+  * Modify /server/resources/server.prop to set the port, default application, number of server processes and other essential attributes [http://code.google.com/p/ffead-cpp/wiki/ServerProperties Logger Properties]
   * Create /server/resources/log.properties file to eanble custom logging for the applications [http://code.google.com/p/ffead-cpp/wiki/LoggerProperties]
   * Create new folders /lib /components /config /dcp /include under your newly created application folder (appname)
    * /server/web/appname
