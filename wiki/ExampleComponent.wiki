@@ -1,32 +1,73 @@
 #summary Example Component File
 
 = example.cmp =
-
+<font size="3" face="Georgia, Arial">
+#The Component Name, Should be unique<br/>
 @CMP_NAME=TEST_BEAN
+
+#The Component Description<br/>
 @CMP_DESC=Test Bean
 
+#Is The Component available Through Ajax<br/>
 @AJAX_AVAIL=true
+
+#Is the Component exposed as a Web-Service<br/>
 @WEBS_AVAIL=true
+
+#Can the Component be additionally invoked using MI<br/>
 @MINV_AVAIL=true
 
+#Is AUTO Trnsaction enabled?<br/>
 @AUTO_TRANS=true
-@THRD_POOL_NUM=20
+
+#The Threading Strategy<br/>
 @THRD_PER_REQ=false
 
+#The Thread Pool size<br/>
+@THRD_POOL_NUM=20
+
+#The Authorization source<br/>
 @AUTH_FROM=database
+
+#The Details of the Auth Source<br/>
 @AUTH_DETS=@DB
+
+#Is Authorization required for All Services?<br/>
 @AUTH_ALL=false
+
+#The User Groups that can access the Services<br/>
 @USR_GRP_ALWD=UG_1,UG_2,UG_3
+
+#The Users that are Blocked.<br/>
 @BLOCK_USERS=user1,user2
+
+#The Protocols allowed<br/>
 @PROTO_ALWD=tcp,http,udp
 
+#The DB connection Pool Size<br/>
 @DB_CONN_POOL_NUM=10
+
+#The Auth Connection Source<br/>
 @AUTH_CONN_SRC=test_dsn
+
+#The Auth Source User Name<br/>
 @AUTH_USR_NAME=test
+
+#The Auth Source User Password<br/>
 @AUTH_USR_PASS=test
+
+#The Auth Source Address<br/>
 @AUTH_ADD=
 
+#Are Sessions alloed<br/>
 @SESSION=false
 
+#The Service Details<br/>
+#@NAME is the Service Name<br/>
+#@USR_GRP_ALWD are the User Groups allowed to access the Component<br/>
+#@SIGNATURE is the Service signature<br/>
+#@ARGS are the arguments required for the Service<br/>
+#SRV_RET is the Service Return type<br/>
 @SERVICE1=@NAME(myFirstService) @USR_GRP_ALWD(UG_1,UG_2) @SIGNATURE(Service1.service1) @ARGS(void) @SRV_RET(string)
 @SERVICE2=@NAME(mySecondService) @BLOCK_USERS(user7) @SIGNATURE(Service2.service2) @ARGS(string) @SRV_RET(string)
+</font>
