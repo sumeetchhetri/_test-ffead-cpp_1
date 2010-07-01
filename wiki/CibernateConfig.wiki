@@ -1,3 +1,34 @@
 #summary configuration for Cibernate (ORM)
 
 = cibernate.xml=
+<font size="3" face="Georgia, Arial">
+<cibernate>
+	<config>
+		<uid>DB user Name</uid>
+		<pwd>DB user password</pwd>
+		<dsn>Data Source Name</dsn>
+		<pool-size>5</pool-size>
+	</config>
+	<tables>
+		<table name="Table1 Name" class="Object1 Name">
+			<col dbf="Table Column Name" obf="Object Property Name"></col>
+			<col dbf="Table Column Name" obf="Object Property Name"></col>
+                        <col dbf="Table Column Name" obf="Object Property Name"></col>
+		</table>
+		<table name="Table2 Name" class="Object2 Name">
+			<col dbf="id" obf="id"></col>
+			<col dbf="name" obf="name"></col>
+		</table>
+		<table name="Table3 Name" class="Object3 Name">
+			<hasOne fk="id" pk="test_id">Test</hasOne>
+			<col dbf="id" obf="id"></col>
+			<col dbf="test_id" obf="test_id"></col>
+		</table>
+		<table name="Table4 Name" class="Object4 Name">
+			<hasMany fk="id" pk="test_id" field="tests">Test</hasMany>
+			<col dbf="id" obf="id"></col>
+			<col dbf="test_id" obf="test_id"></col>
+		</table>
+	</tables>
+</cibernate>
+</font>
