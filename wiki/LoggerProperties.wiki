@@ -1,6 +1,7 @@
 #summary Properties for Application level Logging
 
 = log.properties =
+<font size="3" face="Georgia, Arial">
 #The Logger Mode FILE/CONSOLE
 MODE=FILE
 
@@ -12,3 +13,4 @@ FILEPATH=/home/sumeet/server/server.log
 
 #the Format of the Date in the Logger
 DATEFMT=dd/mm/yyyy hh:mi:ss
+</font>
