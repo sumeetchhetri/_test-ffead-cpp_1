@@ -4,7 +4,7 @@
 
 <font size="3" face="Georgia, Arial">
 #The Objects exposed<br/>
-PROP=YObject,TestMany
+PROP=YObject,{{{TestMany}}}
 
 #The Interfaces or Methods exposed<br/>
 INTF=Expose
