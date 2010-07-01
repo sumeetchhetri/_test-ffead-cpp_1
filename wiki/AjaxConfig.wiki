@@ -1,9 +1,10 @@
 #summary Configuration for Ajax support
 
 = afc.properties =
-
+<font size="3" face="Georgia, Arial">
 #The Objects exposed<br/>
 PROP=YObject,TestMany
 
-#The Interfaces/Methods exposed
+#The Interfaces/Methods exposed<br/>
 INTF=Expose
+</font>
