@@ -2,60 +2,60 @@
 
 = server.properties=
 <font size="3" face="Georgia, Arial">
-# The default Application name
+# The default Application name<br/>
 DEF_PATH=default
 
-#The Server listening port number
+#The Server listening port number<br/>
 PORT_NO=8080
 
-#The Component Invoker listeneing port number
+#The Component Invoker listeneing port number<br/>
 CMP_PORT=
 
-#The Messaging Daemon listening port number
+#The Messaging Daemon listening port number<br/>
 MESS_PORT=
 
-#The Method Invoker listening port number
+#The Method Invoker listening port number<br/>
 MI_PORT=
 
-#Enable SSL?
+#Enable SSL?<br/>
 SSL_ENAB=false
 
-#The mime types supported
+#The mime types supported<br/>
 SUPP_MIMES=*
 
-#Is Streaming supported?
+#Is Streaming supported?<br/>
 STREAM_ENAB=false
 
-#Is Authorization required
+#Is Authorization required<br/>
 AUTH_ENAB=false
 
-#Number of Server processes
+#Number of Server processes<br/>
 NUM_PROC=4
 
-#Is AJAX available?
+#Is AJAX available?<br/>
 AJAX_ENAB=true
 
-#Are Controllers enabled?
+#Are Controllers enabled?<br/>
 CONT_ENAB=true
 
-#Support Dynamic C++ Pages
+#Support Dynamic C++ Pages<br/>
 DCP_ENAB=true
 
-#Is Template Engine enabled?
+#Is Template Engine enabled?<br/>
 TPE_ENAB=true
 
-#Are Dynamic Views enabled?
+#Are Dynamic Views enabled?<br/>
 DVIW_ENAB=true
 
-#The type of Threading strategy
+#The type of Threading strategy<br/>
 THRD_PREQ=true
 
-#The Thread Pool size for Pooled implementations
+#The Thread Pool size for Pooled implementations<br/>
 THRD_POOL=false
 
-#The type of Thread pool
+#The type of Thread pool<br/>
 THRD_PTYP=small|medium|large|vlarge
 
-#The DB connection Pool Size
+#The DB connection Pool Size<br/>
 DB_CONN_POOL_SIZE=
 </font>
