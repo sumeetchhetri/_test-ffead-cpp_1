@@ -1,3 +1,14 @@
 #summary Properties for Application level Logging
 
 = log.properties =
+#The Logger Mode FILE/CONSOLE
+MODE=FILE
+
+#The Logger Level INFO/DEBUG/ERROR
+LEVEL=INFO
+
+#The File Path in case MODE is set to FILE
+FILEPATH=/home/sumeet/server/server.log
+
+#the Format of the Date in the Logger
+DATEFMT=dd/mm/yyyy hh:mi:ss
