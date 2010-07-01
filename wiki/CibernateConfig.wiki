@@ -1,7 +1,7 @@
 #summary configuration for Cibernate (ORM)
 
 = cibernate.xml=
-
+{{{
 <cibernate>
 	<config>
 		<uid>DB user Name</uid>
@@ -31,3 +31,4 @@
 		</table>
 	</tables>
 </cibernate>
+}}}
