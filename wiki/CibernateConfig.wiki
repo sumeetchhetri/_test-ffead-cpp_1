@@ -1,7 +1,7 @@
 #summary configuration for Cibernate (ORM)
 
 = cibernate.xml=
-<font size="3" face="Georgia, Arial">
+
 <cibernate>
 	<config>
 		<uid>DB user Name</uid>
@@ -31,4 +31,3 @@
 		</table>
 	</tables>
 </cibernate>
-</font>
