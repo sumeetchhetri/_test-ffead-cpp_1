@@ -5,6 +5,6 @@
 #The Objects exposed<br/>
 PROP=YObject,TestMany
 
-#The Interfaces/Methods exposed<br/>
+#The Interfaces or Methods exposed<br/>
 INTF=Expose
 </font>
