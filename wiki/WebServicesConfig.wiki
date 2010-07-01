@@ -1,3 +1,8 @@
 #summary Configuration for Web-Services
 
 = ws.xml =
+{{{
+<web-services>
+	<web-service name="testing" class="Testing"></web-service>
+</web-services>
+}}}
