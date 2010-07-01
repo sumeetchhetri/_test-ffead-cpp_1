@@ -1,3 +1,17 @@
 #summary Configure Applications
 
 = application.xml =
+{{{
+<app>
+	<controllers>
+		<controller class="Controller 1" url="*.action"/>
+		<controller class="Controller 2" url="*.do"/>
+	</controllers>
+	<templates>
+		<template class="Default Template Controller" file="test.tpe"/>
+	</templates>
+	<dviews>
+		<dview class="Default View Controller" path="test.view"/>
+	</dviews>
+</app>
+}}}
