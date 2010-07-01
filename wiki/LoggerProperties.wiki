@@ -1,16 +1,16 @@
 #summary Properties for Application level Logging
 
 = log.properties =
-<font size="3" face="Georgia, Arial">
-#The Logger Mode FILE/CONSOLE<br/>
+{{{
+#The Logger Mode FILE/CONSOLE
 MODE=FILE
 
-#The Logger Level INFO/DEBUG/ERROR<br/>
+#The Logger Level INFO/DEBUG/ERROR
 LEVEL=INFO
 
-#The File Path in case MODE is set to FILE<br/>
+#The File Path in case MODE is set to FILE
 FILEPATH=/home/sumeet/server/server.log
 
-#The Format of the Date in the Logger<br/>
+#The Format of the Date in the Logger
 DATEFMT=dd/mm/yyyy hh:mi:ss
-</font>
+}}}
