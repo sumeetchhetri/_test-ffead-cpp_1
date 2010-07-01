@@ -2,7 +2,7 @@
 
 = server.properties=
 <font size="3" face="Georgia, Arial">
-# The default Application name<br/>
+# The default Application name
 DEF_PATH=default
 
 #The Server listening port number<br/>
