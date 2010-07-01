@@ -1,3 +1,9 @@
 #summary Configuration for Ajax support
 
 = afc.properties =
+
+#The Objects exposed<br/>
+PROP=YObject,TestMany
+
+#The Interfaces/Methods exposed
+INTF=Expose
