@@ -2,15 +2,15 @@
 
 = log.properties =
 <font size="3" face="Georgia, Arial">
-#The Logger Mode FILE/CONSOLE
+#The Logger Mode FILE/CONSOLE<br/>
 MODE=FILE
 
-#The Logger Level INFO/DEBUG/ERROR
+#The Logger Level INFO/DEBUG/ERROR<br/>
 LEVEL=INFO
 
-#The File Path in case MODE is set to FILE
+#The File Path in case MODE is set to FILE<br/>
 FILEPATH=/home/sumeet/server/server.log
 
-#the Format of the Date in the Logger
+#The Format of the Date in the Logger<br/>
 DATEFMT=dd/mm/yyyy hh:mi:ss
 </font>
