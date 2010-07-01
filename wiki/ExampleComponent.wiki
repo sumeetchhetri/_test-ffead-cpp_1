@@ -59,7 +59,7 @@
 #The Auth Source Address<br/>
 @AUTH_ADD=
 
-#Are Sessions alloed<br/>
+#Are Sessions allowed<br/>
 @SESSION=false
 
 #The Service Details<br/>
@@ -68,6 +68,6 @@
 #@SIGNATURE is the Service signature<br/>
 #@ARGS are the arguments required for the Service<br/>
 #SRV_RET is the Service Return type<br/>
-@SERVICE1=@NAME(myFirstService) @USR_GRP_ALWD(UG_1,UG_2) @SIGNATURE(Service1.service1) @ARGS(void) @SRV_RET(string)
+@SERVICE1=@NAME(myFirstService) @USR_GRP_ALWD(UG_1,UG_2) @SIGNATURE(Service1.service1) @ARGS(void) @SRV_RET(string)<br/>
 @SERVICE2=@NAME(mySecondService) @BLOCK_USERS(user7) @SIGNATURE(Service2.service2) @ARGS(string) @SRV_RET(string)
 </font>
