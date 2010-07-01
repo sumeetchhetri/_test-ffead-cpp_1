@@ -3,9 +3,9 @@
 = afc.properties =
 
 {{{
-#The Objects exposed<br/>
+#The Objects exposed
 PROP=YObject,TestMany
 
-#The Interfaces or Methods exposed<br/>
+#The Interfaces or Methods exposed
 INTF=Expose
 }}}
