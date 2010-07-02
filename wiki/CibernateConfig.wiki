@@ -4,27 +4,34 @@
 {{{
 <cibernate>
 	<config>
+                <!--The DB user name-->
 		<uid>DB user Name</uid>
+                <!--The DB user password-->
 		<pwd>DB user password</pwd>
+                <!--The DB Data Source name-->
 		<dsn>Data Source Name</dsn>
+                <!--The DB connection pool size-->
 		<pool-size>5</pool-size>
 	</config>
 	<tables>
-		<table name="Table1 Name" class="Object1 Name">
-			<col dbf="Table Column Name" obf="Object Property Name"></col>
-			<col dbf="Table Column Name" obf="Object Property Name"></col>
-                        <col dbf="Table Column Name" obf="Object Property Name"></col>
+                <!--The Table to Objcet Mapping-->
+		<table name="test4" class="Test4">
+			<col dbf="dat" obf="date"></col>
+			<col dbf="datt" obf="datt"></col>
+			<col dbf="datm" obf="dattm"></col>
 		</table>
-		<table name="Table2 Name" class="Object2 Name">
+		<table name="test" class="Test">
 			<col dbf="id" obf="id"></col>
 			<col dbf="name" obf="name"></col>
 		</table>
-		<table name="Table3 Name" class="Object3 Name">
+		<table name="test2" class="Test2">
+                        <!--The Realtional definition of dependent tables-->
 			<hasOne fk="id" pk="test_id">Test</hasOne>
 			<col dbf="id" obf="id"></col>
 			<col dbf="test_id" obf="test_id"></col>
 		</table>
-		<table name="Table4 Name" class="Object4 Name">
+		<table name="test3" class="Test3">
+                        <!--The Realtional definition of dependent tables-->
 			<hasMany fk="id" pk="test_id" field="tests">Test</hasMany>
 			<col dbf="id" obf="id"></col>
 			<col dbf="test_id" obf="test_id"></col>
