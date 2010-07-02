@@ -1,4 +1,4 @@
-#summary Test the Cpp Interpreter
+#summary Example Cpp Interpreter Usage
 
 = {{{TestCppInterpreter.cpp}}} =
 
