@@ -1,4 +1,4 @@
-#summary An Example AJAX Service Implementation
+#summary An Example Implementation of DB Tables and Objects
 
 = {{{Test.h}}} =
 {{{
