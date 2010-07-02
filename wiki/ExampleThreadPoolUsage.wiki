@@ -1,7 +1,7 @@
 #summary Example Component Service Implementations
 
 = {{{ThreadPoolTest.cpp}}} =
-
+{{{
 using namespace std;
 #include "ThreadPool.h"
 
