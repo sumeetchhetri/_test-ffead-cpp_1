@@ -1,4 +1,4 @@
-#summary Example Component Service Implementations
+#summary Example Thread Pool Usage
 
 = {{{ThreadPoolTest.cpp}}} =
 {{{
