@@ -1,4 +1,4 @@
-#summary Example .dcp file
+#summary An Example .dcp file
 
 = example.dcp =
 {{{
