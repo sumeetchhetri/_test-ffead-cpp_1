@@ -1,4 +1,4 @@
-#summary configuration for Cibernate (ORM)
+#summary Configuration for Cibernate (ORM)
 
 = cibernate.xml=
 {{{
