@@ -1,6 +1,6 @@
 #summary An Example Controller Implementation
 
-= ExampleController.h =
+= {{{ExampleController.h}}} =
 {{{
 #ifndef EXAMPLECONTROLLER_H_
 #define EXAMPLECONTROLLER_H_
@@ -17,7 +17,7 @@ public:
 }}}
 
 
-= ExampleController.cpp =
+= {{{ExampleController.cpp}}} =
 {{{
 ExampleController::ExampleController()
 {}
