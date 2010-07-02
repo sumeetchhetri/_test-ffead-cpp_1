@@ -4,14 +4,14 @@
 {{{
 <app>
 	<controllers>
-		<controller class="Controller 1" url="*.action"/>
-		<controller class="Controller 2" url="*.do"/>
+		<controller class="ExampleController" url="*.action"/>
+		<controller class="ExampleController" url="*.do"/>
 	</controllers>
 	<templates>
-		<template class="Default Template Controller" file="test.tpe"/>
+		<template class="ExampleTemplate" file="example.tpe"/>
 	</templates>
 	<dviews>
-		<dview class="Default View Controller" path="test.view"/>
+		<dview class="ExampleDynamicView" path="example.view"/>
 	</dviews>
 </app>
 }}}
