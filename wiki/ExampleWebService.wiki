@@ -1,0 +1,41 @@
+= {{{Testing.h}}} =
+{{{
+#ifndef Testing_H_
+#define Testing_H_
+#include "TemplateHandler.h"
+
+class Testing: public TemplateHandler {
+public:
+	Testing();
+	virtual ~Testing();
+	void test1(string);
+	string test2();
+	void test3(Test);
+	Test test4(string);
+};
+#endif /* Testing_H_ */
+}}}
+
+
+= {{{Testing.cpp}}} =
+{{{
+Testing::Testing()
+{}
+Testing::~Testing()
+{}
+void test1(string)
+{
+}
+string test2()
+{
+	return "Hi There!!";
+}
+void test3(Test)
+{
+}
+Test test4(string)
+{
+	Test r;
+        return r;
+}
+}}}
