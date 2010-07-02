@@ -74,10 +74,10 @@ void testScheduledExecution()
 	mytask task4(4);
 	mytask task5(5);
 	/*Schedule a task to be executed after the defined delay period*/
-	pool.schedule(task5,10,TimeUnit::MILLISECONDS);
-	pool.schedule(task5,10,TimeUnit::SECONDS);
-	pool.schedule(task5,1,TimeUnit::HOURS);
-	pool.schedule(task5,10,TimeUnit::DAYS);
+	pool.schedule(task1,10,TimeUnit::MILLISECONDS);
+	pool.schedule(task2,10,TimeUnit::SECONDS);
+	pool.schedule(task3,1,TimeUnit::HOURS);
+	pool.schedule(task4,10,TimeUnit::DAYS);
 	pool.schedule(task5,110,TimeUnit::MILLISECONDS);
 	/*Wait for completion of all Tasks*/
 	pool.joinAll();
@@ -93,11 +93,11 @@ void testDirectScheduledExecution()
 	mytask task4(4);
 	mytask task5(5);
 	/*Schedule a task to be executed after the defined delay period*/
-	pool.schedule(task5,10,TimeUnit::MILLISECONDS);
-	pool.schedule(task5,10,TimeUnit::SECONDS);
+	pool.schedule(task1,10,TimeUnit::MILLISECONDS);
+	pool.schedule(task2,10,TimeUnit::SECONDS);
 	/*Execute the task*/
-	pool.execute(task5);
-	pool.schedule(task5,10,TimeUnit::DAYS);
+	pool.execute(task3);
+	pool.schedule(task4,10,TimeUnit::DAYS);
 	pool.execute(task5);
 	/*Wait for completion of all Tasks*/
 	pool.joinAll();
