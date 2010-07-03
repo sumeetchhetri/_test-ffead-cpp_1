@@ -1,5 +1,8 @@
 {{{
-int maindd()
+#include "Reflector"
+#include "Test.h"
+
+int main()
 {
 	Reflector reflector;
 	ClassInfo clas = reflector.getClassInfo("Test");
@@ -19,8 +22,8 @@ int maindd()
 	Test *p = new Test;
 	cout << p->getId() << flush;cout << "\n" << flush;
 	cout << reflector.instanceOf(clas.getInstance(),"Test") << flush;
-	bool fl;// = reflector.instanceOf(clas.getInstance(),"Test");
-	cout << "static::" << Object::instanceOf(*p,"Test") << "\n" << flush;
+	bool fl;
+        cout << "static::" << Object::instanceOf(*p,"Test") << "\n" << flush;
 	cout << reflector.instanceOf(reflector,"Test") << flush;
 	cout << reflector.instanceOf(clas,"Test") << flush;
 }
