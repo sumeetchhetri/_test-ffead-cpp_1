@@ -1,13 +1,46 @@
-#summary One-sentence summary of this page.
+{{{
+#include "Serialize.h"
+#include "Test.h"
 
-= Introduction =
-
-Add your content here.
-
-
-= Details =
-
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+int main()
+{
+	Serialize ref;
+	typedef map<int,Test> trmap;
+        Test ooo;
+	trmap oo;
+	oo[0] = ooo;
+	cout << ref.serialize<int,Test>(oo) << flush;
+	typedef vector<Test> terg;
+        Test rt;
+	typedef map<string,int> tergm;
+        tergm pol;
+	terg terf;
+	terf.push_back(rt);
+	cout << ref.serialize<terg>(terf) << flush;
+	cout << ref.serialize<tergm>(pol) << flush;
+	typedef vector<string> ttt;
+	ttt te;
+        Method meth;
+        vals values;
+	Test tr;
+        tr.setName("asdasd");
+	Object tu;
+	tu << tr;
+	cout << ref.serialize<int>(1) << flush;
+	cout << ref.serialize<float>(1.0) << flush;
+	cout << ref.serialize<string>("sa") << flush;
+	cout << ref.serialize<Test>(tr) << flush;
+	int i = ref.unserialize<int>("<int>1</int>");
+	cout << i << "\n" << flush;
+	float j = ref.unserialize<float>("<float>1</float>");
+	cout << j << "\n" << flush;
+	string k = ref.unserialize<string>("<string>sa</string>");
+	cout << k << "\n" << flush;
+	k = *(string*)ref.unSerializeUnknown("<string>sa</string>","string");
+	cout << k << "\n" << flush;
+	Test t = ref.unserialize<Test>("<Test><id type=\"int\">134591544</id><name type=\"string\">fsdfsdf</name></Test>");
+	cout << t.getId() << " " << t.getName() << "\n" << flush;
+	tu << te;
+	cout << ref.serializeObject(tu) << flush;
+}
+}}}
