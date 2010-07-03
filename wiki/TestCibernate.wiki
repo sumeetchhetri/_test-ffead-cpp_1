@@ -1,4 +1,9 @@
 {{{
+#include "Cibernate.h"
+#include "Test.h"
+#include "Timer.h"
+#include "Object.h"
+
 int main()
 {
 	Cibernate chib("MySQL-test","sumeet","sumeet");
