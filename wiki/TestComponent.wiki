@@ -1,0 +1,27 @@
+#summary Example Component Usage
+
+= {{{TestComponent.cpp}}} =
+
+{{{
+
+#include "BeanContext.h"
+#include "Component_TEST_BEAN_Remote.h"
+#include "Component_TEST_BEAN.h"
+
+int main()
+{
+        /*Declare the BeanContext with the remote component listening host and port*/
+	BeanContext cntxt("localhost",7001);
+
+        /*Get the Remote Bean Instance*/
+	Component_TEST_BEAN_Remote *remote = (Component_TEST_BEAN_Remote*)cntxt.lookup("TEST_BEAN");
+
+	string a ="Hello Business Logic!!";
+	if(remote!=NULL)
+        {
+                /*Invoke the remote method on the Bean*/
+                cout << remote->mySecondService(a) << flush;
+        }
+	return 1;
+}
+}}}
