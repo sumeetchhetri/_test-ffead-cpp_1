@@ -1,3 +1,5 @@
+#summary Example Serialization Usage
+
 {{{
 #include "Serialize.h"
 #include "Test.h"
