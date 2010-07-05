@@ -1,3 +1,5 @@
+#summary Example ORM Usage
+
 {{{
 #include "Cibernate.h"
 #include "Test.h"
