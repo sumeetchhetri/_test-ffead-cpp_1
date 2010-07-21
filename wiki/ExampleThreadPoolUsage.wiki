@@ -46,13 +46,13 @@ void testDirectExecution()
 void testPrioritizedExecution()
 {
 	/*Declare a Thread Pool with Min 2 and Max 5 Threads, with Low 1 and 4 High Priority*/
-	ThreadPool pool(2,51,4,true);
+	ThreadPool pool(2,5,1,4,true);
 	/*Create a Task*/
-	mytask task1(1,2);
-	mytask task2(2,4);
-	mytask task3(3,3);
-	mytask task4(4,1);
-	mytask task5(5,4);
+	mytask task1(1);
+	mytask task2(2);
+	mytask task3(3);
+	mytask task4(4);
+	mytask task5(5);
 	/*Execute The Tasks on priority*/
 	pool.execute(task1,2);
 	pool.execute(task2,4);
