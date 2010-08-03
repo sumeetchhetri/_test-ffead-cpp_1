@@ -23,6 +23,7 @@
   * Create /appname/config/afc.properties for Ajax Support [http://code.google.com/p/ffead-cpp/wiki/AjaxConfig Ajax-Configuration]
   * Create /appname/config/ws.xml for Web-Service Support [http://code.google.com/p/ffead-cpp/wiki/WebServicesConfig Web-Services-Configuration]
   * For Business Entities or Business Driven Beans create your custom {{{*}}}.cmp files and drop them inside the /appname/components folder [http://code.google.com/p/ffead-cpp/wiki/ExampleComponent Example-Component]
+  * For Dependency Injection create a file named depInj.xml [http://code.google.com/p/ffead-cpp/wiki/DependencyInjection Example depInj.xml]
   * Create /appname/config/messaging.xml for Messaging support [http://code.google.com/p/ffead-cpp/wiki/MessagingConfig Messaging-Configuration]
   * Create a new HTML page named index.html and place it in your /appname folder
   * Restart the Web Server
