@@ -1,0 +1,32 @@
+#summary Dependency Injection in FFEAD
+
+{{{
+<beans>
+    <!--Define a new Bean of type TestBean and inject objects as properties
+        Setter Injection
+    -->
+    <bean name="testBean" class="TestBean" injectAs="prop">
+        <!--Inject bean with name dependencyBean1-->
+        <inject bean="dependencyBean1">
+        <!--Inject bean with name dependencyBean2-->
+        <inject bean="dependencyBean2">
+        <!--Inject bean with type DependencyBean3-->
+        <inject class="DependencyBean3">
+        <!--Inject a string with value-->
+        <inject inbuilt="string" value="Hello!!">
+    </bean>
+
+    <!--Define a new Bean of type DependencyBean1-->
+    <bean name="dependencyBean1" class="DependencyBean1"/>
+
+    <!--Define a new Bean of type DependencyBean2 and inject objects as constructor args
+        Constructor Injection
+    -->
+    <bean name="dependencyBean2" class="DependencyBean2" injectAs="cons">
+        <!--Inject an integer value-->
+        <inject inbuilt="int" value="1234">
+        <!--Inject a boolean value-->        
+        <inject inbuilt="bool" value="true">
+    </bean>
+</beans>
+}}}
