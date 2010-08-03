@@ -1,5 +1,7 @@
 #summary Dependency Injection in FFEAD
 
+depInj.xml
+
 {{{
 <beans>
     <!--Define a new Bean of type TestBean and inject objects as properties
