@@ -6,7 +6,7 @@
   * Go the folder ffead/server.
   * Create a new folder in /server/web i.e, appname
   * Modify /server/resources/server.prop to set the port, default application, number of server processes and other essential attributes [http://code.google.com/p/ffead-cpp/wiki/ServerProperties Server-Properties]
-  * Create /server/resources/log.properties file to eanble custom logging for the applications [http://code.google.com/p/ffead-cpp/wiki/LoggerProperties Logger-Properties]
+  * Create /server/resources/log.properties file to enable custom logging for the applications [http://code.google.com/p/ffead-cpp/wiki/LoggerProperties Logger-Properties]
   * Create new folders /lib /components /config /dcp /include under your newly created application folder (appname)
    * /server/web/appname
     # /lib
@@ -23,7 +23,7 @@
   * Create /appname/config/afc.properties for Ajax Support [http://code.google.com/p/ffead-cpp/wiki/AjaxConfig Ajax-Configuration]
   * Create /appname/config/ws.xml for Web-Service Support [http://code.google.com/p/ffead-cpp/wiki/WebServicesConfig Web-Services-Configuration]
   * For Business Entities or Business Driven Beans create your custom {{{*}}}.cmp files and drop them inside the /appname/components folder [http://code.google.com/p/ffead-cpp/wiki/ExampleComponent Example-Component]
-  * For Dependency Injection create a file named depInj.xml [http://code.google.com/p/ffead-cpp/wiki/DependencyInjection Example depInj.xml]
+  * For Dependency Injection create a file named /appname/config/depInj.xml [http://code.google.com/p/ffead-cpp/wiki/DependencyInjection Example depInj.xml]
   * Create /appname/config/messaging.xml for Messaging support [http://code.google.com/p/ffead-cpp/wiki/MessagingConfig Messaging-Configuration]
   * Create a new HTML page named index.html and place it in your /appname folder
   * Restart the Web Server
