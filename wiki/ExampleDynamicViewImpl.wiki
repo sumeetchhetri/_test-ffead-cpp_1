@@ -10,7 +10,7 @@ class ExampleDynamicView: public DynamicViewHandler {
 public:
 	ExampleDynamicView();
 	virtual ~ExampleDynamicView();
-	Context getContext();
+	Document getDocument();
 };
 #endif /* EXAMPLEDynamicView_H_ */
 }}}
