@@ -34,8 +34,8 @@ public:
     {
         if(this->boolProp)
         {
-            cout << this->dependencyBean4->print() 
-                 << this->intProp  << fflush;
+            this->dependencyBean4->print();
+            cout << this->intProp << fflush;
         }
     }
 };
@@ -43,9 +43,9 @@ public:
 class DependencyBean4
 {
 public:
-    string print()
+    void print()
     {
-        return "Hello World ";
+        cout << "Hello World " << fflush;
     }    
 };
 }}}
