@@ -26,7 +26,7 @@ int main()
 }
 
 /*
-The output of the following program should be
+The output of the following program would be
 Hello World!!Hello World 1234Hello World!!
 */
 }}}
