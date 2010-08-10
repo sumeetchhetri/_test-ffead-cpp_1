@@ -1,0 +1,38 @@
+#summary Implementation files for Constructor Injection
+
+{{{
+class TestBeanCons
+{
+private:
+    int intProp;
+    bool boolProp;
+    DependencyBean4 dependencyBean4; 
+public:
+    void setIntProp(int intProp)
+    {
+        this->intProp= intProp; 
+    }
+    int getIntProp()
+    {
+        return this->intProp;
+    }
+
+    void setBoolProp(bool boolProp)
+    {
+        this->boolProp= boolProp; 
+    }
+    bool getBoolProp()
+    {
+        return this->boolProp;
+    }
+    
+    void setDependencyBean4(DependencyBean4 dependencyBean4)
+    {
+        this->dependencyBean4 = dependencyBean4; 
+    }
+    DependencyBean4 getDependencyBean4()
+    {
+        return this->dependencyBean4;
+    }
+}
+}}}
