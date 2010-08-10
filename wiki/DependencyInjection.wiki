@@ -13,9 +13,9 @@ depInj.xml
         <!--Inject bean with name dependencyBean2-->
         <inject bean="dependencyBean2">
         <!--Inject bean with type DependencyBean3-->
-        <inject class="DependencyBean3">
+        <inject name="dependencyBean3" class="DependencyBean3">
         <!--Inject a string with value-->
-        <inject inbuilt="string" value="Hello!!">
+        <inject name="strProp" inbuilt="string" value="Hello!!">
     </bean>
     <!--Define a new Bean of type DependencyBean1-->
     <bean name="dependencyBean1" class="DependencyBean1"/>    
@@ -28,11 +28,11 @@ depInj.xml
     -->
     <bean name="testBeanCons" class="TestBeanCons" injectAs="cons">
         <!--Inject an integer value-->
-        <inject inbuilt="int" value="1234">
+        <inject name="intProp" inbuilt="int" value="1234">
         <!--Inject a boolean value-->        
-        <inject inbuilt="bool" value="true">
+        <inject name="boolProp" inbuilt="bool" value="true">
         <!--Inject bean with type DependencyBean4-->
-        <inject class="DependencyBean4">
+        <inject name="dependencyBean4" class="DependencyBean4">
     </bean>
 
 
