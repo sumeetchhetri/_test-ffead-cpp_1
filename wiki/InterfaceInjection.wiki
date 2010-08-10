@@ -24,6 +24,11 @@ public:
     { 
         return this->dependencyIntf2; 
     }  
+
+    public void print()
+    {
+        cout << this->getDependencyIntf1()->print1() << this->getDependencyIntf2()->print2() << fflush;
+    }
 };
 
 class DependencyIntf1
