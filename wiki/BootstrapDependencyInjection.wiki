@@ -15,12 +15,12 @@ int main()
     testBeanProp->print();
 
     //Get the testBeancons from the container 
-    TestBeanCons *testBeancons = (TestBeanCons*)cntxt->getBean("testBeancons");
-    testBeancons->print();
+    TestBeanCons *testBeanCons = (TestBeanCons*)cntxt->getBean("testBeanCons");
+    testBeanCons->print();
 
     //Get the testBeanPIntf from the container 
-    TestBeanIntf *testBeanPIntf = (TestBeanIntf*)cntxt->getBean("testBeanPIntf");
-    testBeanPIntf->print();
+    TestBeanIntf *testBeanIntf = (TestBeanIntf*)cntxt->getBean("testBeanIntf");
+    testBeanIntf->print();
  
     return 1;
 }
