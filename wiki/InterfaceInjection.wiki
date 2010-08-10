@@ -27,38 +27,38 @@ public:
 
     public void print()
     {
-        cout << this->getDependencyIntf1()->print1() 
-             << this->getDependencyIntf2()->print2() << fflush;
+        this->getDependencyIntf1()->print1(); 
+        this->getDependencyIntf2()->print2();
     }
 };
 
 class DependencyIntf1
 {
 public:
-    virtual string print1()=0;
+    virtual void print1()=0;
 };
 
 class DependencyIntf2
 {
 public:
-    virtual string print2()=0;
+    virtual void print2()=0;
 };
 
 class DepDependencyBean1Impl : public DependencyIntf2
 {
 public:
-    string print1()
+    void print1()
     {
-        return "Hello ";
+        cout <<"Hello " << fflush;
     }
 };
 
 class DepDependencyBean2Impl : public DependencyIntf2
 {
 public:
-    string print2()
+    void print2()
     {
-        return "World!!";
+        cout "World!!" << fflush;
     }
 };
 }}}
