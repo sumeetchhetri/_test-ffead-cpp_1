@@ -10,8 +10,8 @@ private:
 public:
     TestBeanCons(int intProp,bool boolProp,DependencyBean4 dependencyBean4)
     {
-        this->intProp= intProp;
-        this->boolProp= boolProp; 
+        this->intProp = intProp;
+        this->boolProp = boolProp; 
         this->dependencyBean4 = dependencyBean4; 
     }
     
@@ -29,5 +29,23 @@ public:
     {
         return this->dependencyBean4;
     }
-}
+
+    void print()
+    {
+        if(this->boolProp)
+        {
+            cout << this->dependencyBean4->print() 
+                 << this->intProp  << fflush;
+        }
+    }
+};
+
+class DependencyBean4
+{
+public:
+    string print()
+    {
+        return "Hello World ";
+    }    
+};
 }}}
