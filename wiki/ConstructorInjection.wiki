@@ -8,28 +8,23 @@ private:
     bool boolProp;
     DependencyBean4 dependencyBean4; 
 public:
-    void setIntProp(int intProp)
+    TestBeanCons(int intProp,bool boolProp,DependencyBean4 dependencyBean4)
     {
-        this->intProp= intProp; 
+        this->intProp= intProp;
+        this->boolProp= boolProp; 
+        this->dependencyBean4 = dependencyBean4; 
     }
+    
     int getIntProp()
     {
         return this->intProp;
     }
 
-    void setBoolProp(bool boolProp)
-    {
-        this->boolProp= boolProp; 
-    }
     bool getBoolProp()
     {
         return this->boolProp;
     }
     
-    void setDependencyBean4(DependencyBean4 dependencyBean4)
-    {
-        this->dependencyBean4 = dependencyBean4; 
-    }
     DependencyBean4 getDependencyBean4()
     {
         return this->dependencyBean4;
