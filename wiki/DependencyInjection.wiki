@@ -30,5 +30,21 @@ depInj.xml
         <!--Inject a boolean value-->        
         <inject inbuilt="bool" value="true">
     </bean>
+
+    <!--Define a new Bean of type DependencyBean2 and inject objects as compatible interfaces
+        Interface Injection
+    -->
+    <bean name="dependencyBean2" class="DependencyBean2" injectAs="intf">
+        <!--Inject bean with interface type DepDependencyBean1-->
+        <inject intfType="DepDependencyIntf1">
+        <!--Inject bean with interface type DepDependencyBean2-->
+        <inject intfType="DepDependencyIntf2">
+    </bean>
+
+    <!--Define a new Bean of type DepDependencyBean1Impl which implements DepDependencyIntf2 interface-->
+    <bean name="depdependencyBean1" class="DepDependencyBean1Impl"/>
+
+    <!--Define a new Bean of type DepDependencyBean2Impl which implements DepDependencyIntf2 interface-->
+    <bean name="depdependencyBean2" class="DepDependencyBean2Impl"/>
 </beans>
 }}}
