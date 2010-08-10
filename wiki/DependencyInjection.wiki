@@ -15,7 +15,7 @@ depInj.xml
         <!--Inject bean with type DependencyBean3-->
         <inject name="dependencyBean3" class="DependencyBean3">
         <!--Inject a string with value-->
-        <inject name="strProp" inbuilt="string" value="Hello!!">
+        <inject name="strProp" inbuilt="string" value="Hello ">
     </bean>
     <!--Define a new Bean of type DependencyBean1-->
     <bean name="dependencyBean1" class="DependencyBean1"/>    
