@@ -1,5 +1,6 @@
 #summary Implementation files for Interface Injection
 
+{{{
 class TestBeanIntf 
 { 
 private: 
@@ -54,3 +55,4 @@ public:
         cout << "World!!" << fflush;
     }
 };
+}}}
