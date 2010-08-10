@@ -4,7 +4,7 @@ depInj.xml
 
 {{{
 <beans>
-    <!--Define a new Bean of type TestBean and inject objects as properties
+    <!--Define a new Bean of type TestBeanProp and inject objects as properties
         Setter Injection
     -->
     <bean name="testBeanProp" class="TestBeanProp" injectAs="prop">
@@ -23,7 +23,7 @@ depInj.xml
     <bean name="dependencyBean2" class="DependencyBean2"/>
 
 
-    <!--Define a new Bean of type DependencyBean2 and inject objects as constructor args
+    <!--Define a new Bean of type TestBeanCons and inject objects as constructor args
         Constructor Injection
     -->
     <bean name="testBeanCons" class="TestBeanCons" injectAs="cons">
@@ -36,7 +36,7 @@ depInj.xml
     </bean>
 
 
-    <!--Define a new Bean of type DependencyBean2 and inject objects as compatible interfaces
+    <!--Define a new Bean of type TestBeanIntf and inject objects as compatible interfaces
         Interface Injection
     -->
     <bean name="testBeanIntf" class="TestBeanIntf" injectAs="intf">
