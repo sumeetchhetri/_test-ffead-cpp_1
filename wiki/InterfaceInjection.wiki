@@ -38,7 +38,7 @@ public:
     virtual void print2()=0;
 };
 
-class DepDependencyBean1Impl
+class DepDependencyBean1Impl : public DependencyIntf2
 {
 public:
     void print1()
@@ -47,7 +47,7 @@ public:
     }
 };
 
-class DepDependencyBean2Impl
+class DepDependencyBean2Impl : public DependencyIntf2
 {
 public:
     void print2()
