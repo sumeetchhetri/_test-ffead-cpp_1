@@ -22,6 +22,8 @@ int main()
     TestBeanIntf *testBeanIntf = (TestBeanIntf*)cntxt->getBean("testBeanIntf");
     testBeanIntf->print();
  
+    //Clean up resources
+    cntxt->clear();
     return 1;
 }
 
