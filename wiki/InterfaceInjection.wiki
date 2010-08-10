@@ -35,30 +35,30 @@ public:
 class DependencyIntf1
 {
 public:
-    virtual void print1()=0;
+    virtual string print1()=0;
 };
 
 class DependencyIntf2
 {
 public:
-    virtual void print2()=0;
+    virtual string print2()=0;
 };
 
 class DepDependencyBean1Impl : public DependencyIntf2
 {
 public:
-    void print1()
+    string print1()
     {
-        cout << "Hello " << fflush;
+        return "Hello ";
     }
 };
 
 class DepDependencyBean2Impl : public DependencyIntf2
 {
 public:
-    void print2()
+    string print2()
     {
-        cout << "World!!" << fflush;
+        return "World!!";
     }
 };
 }}}
