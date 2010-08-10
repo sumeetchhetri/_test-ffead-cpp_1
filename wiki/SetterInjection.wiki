@@ -44,5 +44,40 @@ public:
     {
         return this->dependencyBean3;
     }
-}
+    
+    void print()
+    {
+        cout << this->strProp << fflush;
+        this->dependencyBean1->print();
+        this->dependencyBean2->print();
+        this->dependencyBean3->print();
+    }
+};
+
+class DependencyBean1
+{
+public:
+    void print()
+    {
+        cout << "Wo" << fflush;
+    };
+};
+
+class DependencyBean2
+{
+public:
+    void print()
+    {
+        cout << "rl" << fflush;
+    };
+};
+
+class DependencyBean3
+{
+public:
+    void print()
+    {
+        cout << "d!!" << fflush;
+    };
+};
 }}}
