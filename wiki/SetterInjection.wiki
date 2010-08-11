@@ -47,7 +47,7 @@ public:
     
     void print()
     {
-        cout << this->strProp << fflush;
+        cout << *(this->strProp) << fflush;
         this->dependencyBean1->print();
         this->dependencyBean2->print();
         this->dependencyBean3->print();
