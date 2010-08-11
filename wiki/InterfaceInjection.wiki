@@ -4,23 +4,23 @@
 class TestBeanIntf 
 { 
 private: 
-    DependencyIntf1 dependencyIntf1; 
-    DependencyIntf2 dependencyIntf2; 
+    DependencyIntf1 *dependencyIntf1; 
+    DependencyIntf2 *dependencyIntf2; 
 public: 
-    void DependencyIntf1(DependencyIntf1 dependencyIntf1) 
+    void DependencyIntf1(DependencyIntf1 *dependencyIntf1) 
     { 
         this->dependencyIntf1 = dependencyIntf1;  
     } 
-    DependencyIntf1 getDependencyIntf1() 
+    DependencyIntf1* getDependencyIntf1() 
     { 
         return this->dependencyIntf1; 
     } 
     
-    void DependencyIntf2(DependencyIntf2 dependencyIntf2) 
+    void DependencyIntf2(DependencyIntf2 *dependencyIntf2) 
     { 
         this->dependencyIntf2 = dependencyIntf2;  
     } 
-    DependencyIntf2 getDependencyIntf2() 
+    DependencyIntf2* getDependencyIntf2() 
     { 
         return this->dependencyIntf2; 
     }  
