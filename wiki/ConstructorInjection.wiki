@@ -4,38 +4,38 @@
 class TestBeanCons
 {
 private:
-    int intProp;
-    bool boolProp;
-    DependencyBean4 dependencyBean4; 
+    int *intProp;
+    bool *boolProp;
+    DependencyBean4 *dependencyBean4; 
 public:
-    TestBeanCons(int intProp,bool boolProp,DependencyBean4 dependencyBean4)
+    TestBeanCons(int *intProp,bool *boolProp,DependencyBean4 *dependencyBean4)
     {
         this->intProp = intProp;
         this->boolProp = boolProp; 
         this->dependencyBean4 = dependencyBean4; 
     }
     
-    int getIntProp()
+    int* getIntProp()
     {
         return this->intProp;
     }
 
-    bool getBoolProp()
+    bool* getBoolProp()
     {
         return this->boolProp;
     }
     
-    DependencyBean4 getDependencyBean4()
+    DependencyBean4* getDependencyBean4()
     {
         return this->dependencyBean4;
     }
 
     void print()
     {
-        if(this->boolProp)
+        if(*(this->boolProp))
         {
             this->dependencyBean4->print();
-            cout << this->intProp << fflush;
+            cout << *(this->intProp) << fflush;
         }
     }
 };
