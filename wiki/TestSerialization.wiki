@@ -1,4 +1,5 @@
 #summary Example Serialization Usage
+#labels cpp,serialization,support
 
 {{{
 #include "Serialize.h"
