@@ -1,4 +1,5 @@
 #summary An Example AJAX Service Implementation
+#labels ffead,cpp,ajax,service,example,implementation,object,to,javascript,mapping
 
 = {{{ExampleAJAXService.h}}} =
 {{{
