@@ -1,4 +1,5 @@
 #summary Configuration for Web-Services
+#labels ffead,cpp,example,implementation,web,service,wsdl
 
 = ws.xml =
 {{{
