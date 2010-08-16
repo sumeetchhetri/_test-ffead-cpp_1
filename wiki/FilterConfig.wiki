@@ -1,5 +1,5 @@
 #summary Configuration file for Filters
-#labels cpp,web,filter,configuration,request,response
+#labels cpp,web,filter,configuration,request,response,ffead
 
 {{{
 <!--The list of filters configured in the application-->
