@@ -1,4 +1,5 @@
 #summary Create a new application in minutes
+#labels ffead,cpp,quickstart,guide
 
 = Quick Start Guide = 
 <font size="3" face="Georgia, Arial">
