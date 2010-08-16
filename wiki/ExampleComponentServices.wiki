@@ -1,4 +1,5 @@
 #summary Example Component Service Implementations
+#labels ffead,cpp,component,service,implementation,example
 
 = {{{Service1.h}}} =
 
