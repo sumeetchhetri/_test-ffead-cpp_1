@@ -1,4 +1,5 @@
 #summary Bootstrapping Dependency Injection
+#labels ffead,cpp,dependency,injection,bootstrap,example
 
 {{{
 #include "FFEADContext.h"
