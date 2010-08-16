@@ -1,4 +1,5 @@
 #summary An Example Implementation of DB Tables and Objects
+#labels ffead,cpp,db,tables,object,mappings,cibernate,orm
 
 = {{{Person.h}}} =
 {{{
