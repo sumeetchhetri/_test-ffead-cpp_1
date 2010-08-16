@@ -1,4 +1,5 @@
 #summary Example Reflection Usage
+#labels cpp,reflection,support
 
 {{{
 #include "Reflector"
