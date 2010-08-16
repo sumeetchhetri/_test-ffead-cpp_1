@@ -1,4 +1,5 @@
 #summary Dependency Injection in FFEAD
+#labels cpp,dependency,injection,setter,constructor,interface
 
 depInj.xml
 
