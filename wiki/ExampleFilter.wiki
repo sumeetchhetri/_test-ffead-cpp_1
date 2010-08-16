@@ -1,4 +1,4 @@
-#summary Implementation files for Content Filter
+#summary Implementation files for Content Filters
 
 {{{
 #include "Filter.h"
