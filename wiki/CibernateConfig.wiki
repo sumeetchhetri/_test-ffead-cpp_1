@@ -20,21 +20,27 @@
 			<col dbf="datt" obf="datt"></col>
 			<col dbf="datm" obf="dattm"></col>
 		</table>
-		<table name="test" class="Test">
+		<table name="person" class="Person">
+                        <hasMany fk="person_id" pk="id" field="interests" relClass="Person_Interests" relfk="interest_id" relpk="id">Interest</hasMany>
 			<col dbf="id" obf="id"></col>
 			<col dbf="name" obf="name"></col>
+                        <col dbf="age" obf="age"></col>
+                        <hasOne fk="life_id" pk="id" field="life" lazy="true">Life</hasOne>
 		</table>
-		<table name="test2" class="Test2">
-                        <!--The Realtional definition of dependent tables-->
-			<hasOne fk="id" pk="test_id">Test</hasOne>
-			<col dbf="id" obf="id"></col>
-			<col dbf="test_id" obf="test_id"></col>
+		<table name="interest" class="Interest">
+                        <hasMany fk="interest_id" pk="id" field="persons" relClass="Person_Interests" relfk="person_id" relpk="id">Person</hasMany>
+                        <col dbf="id" obf="id"></col>
+			<col dbf="desc" obf="desc"></col>
+                        <col dbf="type" obf="type"></col>
 		</table>
-		<table name="test3" class="Test3">
-                        <!--The Realtional definition of dependent tables-->
-			<hasMany fk="id" pk="test_id" field="tests">Test</hasMany>
-			<col dbf="id" obf="id"></col>
-			<col dbf="test_id" obf="test_id"></col>
+                <table name="person_interests" class="Person_Interests">
+                        <col dbf="person_id" obf="person_id"></col>
+			<col dbf="interest_id" obf="interest_id"></col>
+		</table>
+		<table name="life clas="Life">
+                        <col dbf="life_id" obf="life_id"></col>
+                        <col dbf="desc" obf="desc"></col>
+                        <col dbf="type" obf="type"></col>
 		</table>
 	</tables>
 </cibernate>
