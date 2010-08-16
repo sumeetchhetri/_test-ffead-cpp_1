@@ -1,5 +1,5 @@
 #summary Configuration for Ajax support
-#labels ajax,configuration,cpp
+#labels ajax,configuration,cpp,ffead
 
 = afc.properties =
 
