@@ -1,5 +1,5 @@
 #summary Implementation files for Content Filters
-#labels ffead,cpp,filter,request,response,pre,post,processing,content
+#labels ffead,cpp,filter,request,response,pre,post,processing,content,example
 
 {{{
 #include "Filter.h"
