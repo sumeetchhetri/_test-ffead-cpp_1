@@ -13,5 +13,6 @@
 	<dviews>
 		<dview class="ExampleDynamicView" path="example.view"/>
 	</dviews>
+        <filters/>
 </app>
 }}}
