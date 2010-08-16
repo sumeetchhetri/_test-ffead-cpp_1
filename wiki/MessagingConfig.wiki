@@ -1,4 +1,5 @@
 #summary Configuration file for Messaging Support
+#labels ffead,cpp,messaging,configuration,topic,queue
 
 = messaging.xml =
 {{{
