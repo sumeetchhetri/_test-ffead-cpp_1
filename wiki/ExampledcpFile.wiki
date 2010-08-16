@@ -15,7 +15,7 @@ using namespace std;
 lsdflsdkfjsdlflk
 <DCPB>
 string h;
-h = "sdfsdf";
+h = "Hello World!!";
 </DCPB>
 <import>/home/sumeet/server/web/default/dcp/testheader.dcp</import>
 <input type="submit"/>
@@ -31,7 +31,8 @@ hout << h;
 <DCPF>
 void printscrn()
 {
-	cout << "sdfsdfsdf" << flush;
+        //Goes to the server console
+	cout << "Hello World from function!!" << flush;
 }
 </DCPF>
 
