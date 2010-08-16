@@ -1,4 +1,5 @@
 #summary Implementation files for Constructor Injection
+#labels cpp,constructor,injection
 
 {{{
 class TestBeanCons
