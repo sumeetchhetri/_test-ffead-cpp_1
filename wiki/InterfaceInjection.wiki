@@ -1,4 +1,5 @@
 #summary Implementation files for Interface Injection
+#labels cpp,interface,injection
 
 {{{
 class TestBeanIntf 
