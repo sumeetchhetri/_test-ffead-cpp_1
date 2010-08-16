@@ -1,4 +1,5 @@
 #summary An Example Web Service Implementation
+#labels ffead,cpp,web,service,wsdl,example,implementation
 
 = {{{Testing.h}}} =
 {{{
