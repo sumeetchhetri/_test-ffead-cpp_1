@@ -1,4 +1,5 @@
 #summary An Example Controller Implementation
+#labels ffead,cpp,example,controller,implementation
 
 = {{{ExampleController.h}}} =
 {{{
