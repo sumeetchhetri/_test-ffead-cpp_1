@@ -11,18 +11,21 @@ using namespace std;
 <head>
 </head>
 <body>
-<input type="1"/>
+<input type="text"/>
 lsdflsdkfjsdlflk
 <DCPB>
 string h;
 h = "sdfsdf";
 </DCPB>
 <import>/home/sumeet/server/web/default/dcp/testheader.dcp</import>
-<input type="2"/>
-<input type="3"/>
+<input type="submit"/>
+<input type="text"/>
 
 <DCPB>
+//Goes to the server console
 cout << h << flush;
+//Gets printed as HTML
+hout << h << flush;
 </DCPB>
 
 <DCPF>
