@@ -1,4 +1,5 @@
 #summary An Example .dcp file
+#labels ffead,cpp,dcp,dynamic,page
 
 = example.dcp =
 {{{
