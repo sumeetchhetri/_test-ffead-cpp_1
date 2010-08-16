@@ -1,4 +1,5 @@
 #summary Properties for Application level Logging
+#labels ffead,cpp,logger,configuration
 
 = log.properties =
 {{{
