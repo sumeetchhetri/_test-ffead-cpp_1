@@ -1,4 +1,5 @@
 #summary An Example Template Implementation
+#labels ffead,cpp,template,example,implementation
 
 = {{{ExampleTemplate.h}}} =
 {{{
