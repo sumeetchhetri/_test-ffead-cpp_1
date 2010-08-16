@@ -1,0 +1,11 @@
+#summary Configuration file for Filters
+
+{{{
+<!--The list of filters configured in the application-->
+<filters>
+    <!--A filter configured for request level filtering and the first filter in the chain-->
+    <filter order="1" type="request" class="ExampleRequestFilter" url="*.htm,*.do"/>
+    <!--A filter configured for response level filtering and the second filter in the chain-->
+    <filter order="2" type="response" class="ExampleResponseFilter" url="*.htm,*.do"/>
+</filters>
+}}}
