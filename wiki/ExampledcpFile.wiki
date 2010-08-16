@@ -25,7 +25,7 @@ h = "sdfsdf";
 //Goes to the server console
 cout << h << flush;
 //Gets printed as HTML
-hout << h << flush;
+hout << h;
 </DCPB>
 
 <DCPF>
