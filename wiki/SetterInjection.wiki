@@ -1,5 +1,5 @@
 #summary Implementation files for Setter Injection
-#labels cpp,setter,injection
+#labels cpp,setter,injection,ffead
 
 {{{
 class TestBeanProp
