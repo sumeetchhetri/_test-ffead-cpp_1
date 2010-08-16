@@ -1,0 +1,24 @@
+#summary Implementation files for Content Filter
+
+{{{
+#include "Filter.h"
+
+class ExampleRequestFilter : public Filter
+{
+    void filter(HttpRequest request,HttpResponse response)
+    {
+        //Pre/Post Processing of request
+        request.set....        
+    }
+};
+
+class ExampleResponseFilter : public Filter
+{
+    void filter(HttpRequest request,HttpResponse response)
+    {
+        //Pre/Post Processing of response
+        response.set....        
+    }
+};
+
+}}}
