@@ -1,4 +1,5 @@
 #summary An Example DynamicView Implementation
+#labels ffead,cpp,dynamic,view,dview,example,implementation
 
 = {{{ExampleDynamicView.h}}} =
 {{{
