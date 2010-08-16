@@ -1,5 +1,5 @@
 #summary Example Thread Pool Usage
-#labels c,thread,pool,scheduled,priority,direct
+#labels cpp,thread,pool,scheduled,priority,direct
 
 = {{{ThreadPoolTest.cpp}}} =
 {{{
