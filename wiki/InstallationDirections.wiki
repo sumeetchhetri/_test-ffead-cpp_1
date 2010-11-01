@@ -7,6 +7,7 @@
   * Install *Unix-ODBC* and required odbc files for *MySQL* dependency
   * Install *Open-SSL* as well
   * [http://www.codeproject.com/KB/recipes/JSON_Spirit.aspx *JSON-SPIRIT*] source and header files are already included in the source code distribution
+  * Also included prototype.js in source for AJAX support
   * Go to the ffead-server/Release or ffead-server/Debug depending on whether you need to debug the server code
   * Open terminal and type *make all*
   * This will create the distribution folder named ffead-server inside ffead-server/Release or ffead-server/Debug folders accordingly
