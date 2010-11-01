@@ -3,4 +3,4 @@
 
 = API Documentation =
 
-[http://ffead-cpp.googlecode.com/p/ffead-cpp/svn/trunk/ffead-server/html/index.html Documentation]
+[http://ffead-cpp.googlecode.com/svn/trunk/ffead-server/html/index.html Documentation]
