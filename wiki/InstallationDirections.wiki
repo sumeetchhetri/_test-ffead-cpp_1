@@ -1,6 +1,6 @@
 #summary Installing ffead-server
 
-= Dependencies = 
+= Installation = 
 <font size="3" face="Georgia, Arial">
   * Download the tar file and extract it to the location of your choice.
   * Make sure *boost* libraries are installed on your system
