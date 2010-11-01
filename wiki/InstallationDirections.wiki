@@ -6,8 +6,7 @@
   * Make sure boost libraries are installed on your system
   * Install Unix-ODBC and required odbc files for MySQL dependency
   * Install Open-SSL as well
-  * Go to the ffead-server/Release or ffead-server/Debug depending on whether
-    you need to debug the server code.
+  * Go to the ffead-server/Release or ffead-server/Debug depending on whether you need to debug the server code
   * Open terminal and type make all
   * This will create the distribution folder named ffead-server inside ffead-server/Release or ffead-server/Debug folders accordingly
   * Place your application shared library inside the ffead-server/Release/ffead-server or ffead-server/Debug/ffead-server folder.
