@@ -1,6 +1,0 @@
-#summary API Documentation
-#labels api,doc,cpp,ffead
-
-= API Documentation =
-
-[http://ffead-cpp.googlecode.com/svn/trunk/ffead-server/html/index.html Documentation]
