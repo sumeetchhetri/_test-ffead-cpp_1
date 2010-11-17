@@ -15,4 +15,6 @@
   * Place your web application specific files inside the ffead-server/Release/ffead-server/web folder inside a folder with your application name
   * Type *./server.sh* when inside the ffead-server folder to start the application server
   * A default application is already provided for your reference inside the ffead-server/web folder
+  * To compile the default application shared library go to the ffead-server/Release/ffead-server/web/default/src/Debug folder and run "make all"
+  * Copy the libdefault library to the ffead-server/Release/ffead-server/lib folder
 </font>
