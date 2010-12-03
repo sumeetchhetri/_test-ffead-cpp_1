@@ -25,10 +25,16 @@ h = "Hello World!!";
 <DCPB>
 //Goes to the server console
 cout << h << flush;
-//Gets printed as HTML
-hout << h;
 </DCPB>
 
+<DCPB>
+for(int i=0;i<10;i++)
+{
+</DCPB>
+<input type="text"/>
+<DCPB>
+}
+</DCPB>
 <DCPF>
 void printscrn()
 {
