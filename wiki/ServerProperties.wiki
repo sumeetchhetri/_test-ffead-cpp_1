@@ -52,10 +52,7 @@ DVIW_ENAB=true
 THRD_PREQ=true
 
 #The Thread Pool size for Pooled implementations
-THRD_POOL=false
-
-#The type of Thread pool
-THRD_PTYP=small|medium|large|vlarge
+THRD_PSIZ=30
 
 #The DB connection Pool Size
 DB_CONN_POOL_SIZE=
