@@ -2,6 +2,8 @@
 #labels ffead,cpp,filter,request,response,pre,post,processing,content,example
 
 {{{
+
+ExampleRequestFilter.cpp
 #include "Filter.h"
 
 class ExampleRequestFilter : public Filter
@@ -13,6 +15,10 @@ class ExampleRequestFilter : public Filter
     }
 };
 
+
+ExampleResponseFilter.cpp
+#include "Filter.h"
+
 class ExampleResponseFilter : public Filter
 {
     void doOutputFilter(HttpResponse *response)
@@ -22,4 +28,12 @@ class ExampleResponseFilter : public Filter
     }
 };
 
+
+application.xml
+<app>
+	<filters>
+		<filter class="ExampleRequestFilter" type="in"/>
+		<filter class="ExampleResponseFilter" type="out"/>
+	</filters>
+</app>
 }}}
