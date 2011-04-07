@@ -6,7 +6,7 @@
 
 class ExampleRequestFilter : public Filter
 {
-    void filter(HttpRequest request,HttpResponse response)
+    void doInputFilter(HttpRequest *request)
     {
         //Pre/Post Processing of request
         request.set....        
@@ -15,7 +15,7 @@ class ExampleRequestFilter : public Filter
 
 class ExampleResponseFilter : public Filter
 {
-    void filter(HttpRequest request,HttpResponse response)
+    void doOutputFilter(HttpResponse *response)
     {
         //Pre/Post Processing of response
         response.set....        
