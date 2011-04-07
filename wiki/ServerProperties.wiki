@@ -63,6 +63,6 @@ SESS_STATE=server
 #Compilers are generally disabled on production deployments
 #Start server with COMPILE_ENABLED=true on Development servers
 #and move the code to Production changing the flag COMPILE_ENABLED=false
-#The code would not generated at run-time on server restart now
+#The code would not be generated at run-time on server restart now
 COMPILE_ENABLED=true
 }}}
