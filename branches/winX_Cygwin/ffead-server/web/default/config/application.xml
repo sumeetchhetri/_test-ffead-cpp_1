@@ -1,0 +1,21 @@
+<app>
+	<controllers>
+		<controller class="DefaultController" url="*.action"/>
+		<controller class="DefaultController" url="*.do"/>
+		<controller from="*.yourext" to="*.html"/>
+	</controllers>
+	<authhandlers>
+		<authhandler provider="file:users" url="*.authenticate"/>
+		<authhandler provider="class:DefaultOAUTHController" url="*.oauth"/>
+	</authhandlers>
+	<templates>
+		<template class="DefTemp" file="test.tpe"/>
+	</templates>
+	<dviews>
+		<dview class="Dview" path="test.view"/>
+	</dviews>
+	<filters>
+		<filter class="DefaultIOFilter" type="in"/>
+		<filter class="DefaultIOFilter" type="out"/>
+	</filters>
+</app>
