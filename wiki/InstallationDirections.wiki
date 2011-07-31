@@ -2,6 +2,7 @@
 
 = Installation = 
 <font size="3" face="Georgia, Arial">
+  * Follow <a href="http://code.google.com/p/ffead-cpp/wiki/WindowsCygwinInstallationDirections"><b>Windows/Cygwin Install</b></a> for directions on how to install on Windows and Cygwin
   * Download the tar file and extract it to the location of your choice.
   * Make sure *boost* libraries are installed on your system
   * Install *Unix-ODBC* and required odbc files for *MySQL* dependency
