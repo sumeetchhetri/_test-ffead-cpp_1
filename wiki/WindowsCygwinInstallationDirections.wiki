@@ -1,0 +1,33 @@
+#summary Installing ffead-server on Windows and Cygwin
+#labels Featured,Phase-Deploy
+
+= Installation On Windows with Cygwin = 
+<font size="3" face="Georgia, Arial">
+  * Download Cygwin setup.exe and follow instruction to install Cygwin, proceed with default settings.
+  * After Cygwin is successfully installed, you can open a cygwin terminal to check whether Cygwin works.
+  * Run the setup.exe to install further dependencies whenever required.
+  * Following are the dependencies,
+    # gcc
+    # g++
+    # autoconf
+    # automake
+    # boost libraries and devel
+    # openssl libraries and devel (use Cygwin_SSL_UnixOdbc_libs.zip from downloads section for version 1.0)
+    # unixODBC libraries and devel (not found in Cygwin reposistory, use Cygwin_SSL_UnixOdbc_libs.zip from download section)
+    # bison,yacc,flex,gdb,readline,binutils (for building and installing openssl and unixODBC)
+  * Download the latest release tar file and extract it to the location of your choice under Cygwin installation.
+  * Make sure *boost* libraries are installed on your system
+  * Install *Unix-ODBC* and required odbc files for *MySQL* dependency
+  * Install *Open-SSL* as well
+  * <a href="http://www.codeproject.com/KB/recipes/JSON_Spirit.aspx"><b>JSON-SPIRIT</b></a> source and header files are already included in the source code distribution
+  * Also included *prototype.js* in source for AJAX support
+  * Go to the ffead-server/Release or ffead-server/Debug depending on whether you need to debug the server code
+  * Open terminal and type *make all*
+  * This will create the distribution folder named ffead-server inside ffead-server/Release or ffead-server/Debug folders accordingly
+  * Place your application shared library inside the ffead-server/Release/ffead-server or ffead-server/Debug/ffead-server folder.
+  * Place your web application specific files inside the ffead-server/Release/ffead-server/web folder inside a folder with your application name
+  * Type *./server.sh* when inside the ffead-server folder to start the application server
+  * A default application is already provided for your reference inside the ffead-server/web folder
+  * To compile the default application shared library go to the ffead-server/Release/ffead-server/web/default/src/Debug folder and run "make all"
+  * Copy the libdefault library to the ffead-server/Release/ffead-server/lib folder
+</font>
