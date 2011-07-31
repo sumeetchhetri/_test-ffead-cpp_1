@@ -1,4 +1,5 @@
 #summary Installing ffead-server
+#labels Featured,Phase-Deploy
 
 = Installation = 
 <font size="3" face="Georgia, Arial">
