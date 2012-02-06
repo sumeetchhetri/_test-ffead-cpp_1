@@ -1,0 +1,46 @@
+#summary An Example Rest Controller Implementation
+#labels restcontroller,implementation,Featured
+
+= {{{DefaultRestController.h}}} =
+{{{
+#ifndef DEFAULTRESTCONTROLLER_H_
+#define DEFAULTRESTCONTROLLER_H_
+
+#include "RestController.h"
+#include <iostream>
+
+class DefaultRestController: public RestController {
+public:
+	DefaultRestController();
+	virtual ~DefaultRestController();
+	void addNumbers(int,int);
+};
+
+#endif /* DEFAULTRESTCONTROLLER_H_ */
+}}}
+
+
+= {{{DefaultRestController.cpp}}} =
+{{{
+#include "DefaultRestController.h"
+
+DefaultRestController::DefaultRestController() {
+	// TODO Auto-generated constructor stub
+
+}
+
+DefaultRestController::~DefaultRestController() {
+	// TODO Auto-generated destructor stub
+}
+
+void DefaultRestController::addNumbers(int a, int b)
+{
+	int c = a + b;
+	response->setStatusCode("200");
+	response->setStatusMsg("OK");
+	response->setContent_type("text/plain");
+	response->setContent_str(boost::lexical_cast<string>(a) + " + " + boost::lexical_cast<string>(b) + " = " +
+			boost::lexical_cast<string>(c));
+	cout << "Processed input request inside DefaultRestController..." << endl;
+}
+}}}
