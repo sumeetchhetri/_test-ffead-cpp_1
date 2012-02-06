@@ -7,13 +7,48 @@
 	<controllers>
 		<controller class="ExampleController" url="*.action"/>
 		<controller class="ExampleController" url="*.do"/>
+		<controller from="*.yourext" to="*.html"/>
 	</controllers>
+	<authhandlers>
+		<authhandler provider="file:users" url="*.authenticate"/>
+		<authhandler provider="class:ExampleOAUTHController" url="*.oauth"/>
+	</authhandlers>
 	<templates>
-		<template class="ExampleTemplate" file="example.tpe"/>
+		<template class="DefTemp" file="test.tpe"/>
 	</templates>
 	<dviews>
-		<dview class="ExampleDynamicView" path="example.view"/>
+		<dview class="Dview" path="test.view"/>
 	</dviews>
-        <filters/>
+	<filters>
+		<filter class="ExampleIOFilter" type="in"/>
+		<filter class="ExampleIOFilter" type="out"/>
+	</filters>
+	<restcontrollers>
+		<restcontroller class="ExampleRestController" urlpath="/rest/path/" name="rest1">
+			<restfunction name="addNumbers" alias="add">
+				<param pos="1" type="int"/>
+				<param pos="2" type="int"/>
+			</restfunction>
+		</restcontroller>
+		<restcontroller class="ExampleRestController" urlpath="/rest/path1/" name="rest2">
+			<restfunction name="addNumbers" alias="+">
+				<param pos="1" type="int"/>
+				<param pos="2" type="int"/>
+			</restfunction>
+		</restcontroller>
+		<restcontroller class="ExampleRestController" name="rest3">
+			<restfunction name="addNumbers" alias="ad">
+				<param pos="1" type="int"/>
+				<param pos="2" type="int"/>
+			</restfunction>
+		</restcontroller>
+		<restcontroller class="ExampleRestController">
+			<restfunction name="addNumbers">
+				<param pos="1" type="int"/>
+				<param pos="2" type="int"/>
+			</restfunction>
+		</restcontroller>
+	</restcontrollers>
 </app>
+
 }}}
