@@ -1,4 +1,4 @@
-#summary Installing ffead-server
+#summary Installing ffead-server on GNU/Linux
 #labels Featured,Phase-Deploy
 
 = Installation = 
