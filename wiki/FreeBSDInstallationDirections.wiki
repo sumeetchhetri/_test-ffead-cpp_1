@@ -1,4 +1,5 @@
 #summary Installing ffead-server-freebsd on FreeBSD
+#labels Featured
 
 = FreeBSD based Installation = 
 <font size="3" face="Georgia, Arial">
