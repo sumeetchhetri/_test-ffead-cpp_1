@@ -21,23 +21,36 @@ public:
 
 = {{{Testing.cpp}}} =
 {{{
-Testing::Testing()
-{}
-Testing::~Testing()
-{}
-void test1(string)
-{
+#include "Testing.h"
+
+Testing::Testing() {
+	// TODO Auto-generated constructor stub
+
 }
-string test2()
-{
-	return "Hi There!!";
+
+Testing::~Testing() {
+	// TODO Auto-generated destructor stub
 }
-void test3(Test)
+
+void Testing::test1(string in)
 {
+	cout << "in Webservice Req for test1 --\n" << in << flush;
 }
-Test test4(string)
+string Testing::test2()
 {
-	Test r;
-        return r;
+	cout << "in Webservice Req for test2 --\n" <<  flush;
+	return "success";
+}
+void Testing::test3(Test t)
+{
+	cout << "in Webservice Req for test3 --\n" << t.getName() << flush;
+}
+Test Testing::test4(string in)
+{
+	Test g;
+	g.setId(1);
+	g.setName("Ffead-cpp");
+	cout << "in Webservice Req for test4 --\n" << in << flush;
+	return g;
 }
 }}}
