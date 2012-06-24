@@ -7,7 +7,7 @@
 #define Testing_H_
 #include "TemplateHandler.h"
 
-class Testing: public TemplateHandler {
+class Testing {
 public:
 	Testing();
 	virtual ~Testing();
