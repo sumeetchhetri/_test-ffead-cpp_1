@@ -5,7 +5,6 @@
 {{{
 #ifndef Testing_H_
 #define Testing_H_
-#include "TemplateHandler.h"
 
 class Testing {
 public:
