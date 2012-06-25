@@ -5,12 +5,12 @@
 <font size="3" face="Georgia, Arial">
   * Download the tar file and extract it to the location of your choice.
   * Visit the [http://code.google.com/p/ffead-cpp/wiki/InstallationDirections Installation Directions] page for more information
-  * Go the folder ffead/server.
-  * Create a new folder in /server/web i.e, appname
-  * Modify /server/resources/server.prop to set the port, default application, number of server processes and other essential attributes [http://code.google.com/p/ffead-cpp/wiki/ServerProperties Server-Properties]
-  * Create /server/resources/log.properties file to enable custom logging for the applications [http://code.google.com/p/ffead-cpp/wiki/LoggerProperties Logger-Properties]
+  * Go the folder ffead-server-unix/Debug/ffead-server.
+  * Create a new folder in ffead-server/web i.e, appname
+  * Modify ffead-server/resources/ffead-server.prop to set the port, default application, number of server processes and other essential attributes [http://code.google.com/p/ffead-cpp/wikiffead-serverProperties Server-Properties]
+  * Create ffead-server/resources/log.properties file to enable custom logging for the applications [http://code.google.com/p/ffead-cpp/wiki/LoggerProperties Logger-Properties]
   * Create new folders /lib /components /config /dcp /include under your newly created application folder (appname)
-   * /server/web/appname
+   * ffead-server/web/appname
     # /lib
     # /include
     # /dcp
