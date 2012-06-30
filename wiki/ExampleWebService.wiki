@@ -54,3 +54,16 @@ Test Testing::test4(string in)
 	return g;
 }
 }}}
+
+= Config for web-service in ws.xml =
+{{{
+<web-services>
+	<!--Custom implementation of a web-service, with methods-->
+        <web-service name="testing" class="Testing">
+                <test1 outname="result"/>
+                <test2 outname="result"/>
+                <test3 outname="result"/>
+                <test4 outname="result"/>
+        </web-service>
+</web-services>
+}}}
