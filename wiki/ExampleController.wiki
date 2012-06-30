@@ -36,9 +36,12 @@ HttpResponse ExampleController::service(HttpRequest request)
 
 = Config for controller in {{{application.xml}}} =
 {{{
-        <controllers>
-                <controller class="DefaultController" url="*.action"/>
-                <controller class="DefaultController" url="*.do"/>
-                <controller from="*.yourext" to="*.html"/>
-        </controllers>
+<controllers>
+	<!--Custom controller handling url patterns-->
+	<controller class="DefaultController" url="*.action"/>
+	<controller class="DefaultController" url="*.do"/>
+
+	<!--Internal controller handling extension conversions-->
+	<controller from="*.yourext" to="*.html"/>
+</controllers>        
 }}}
