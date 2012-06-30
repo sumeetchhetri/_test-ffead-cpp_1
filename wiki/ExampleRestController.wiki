@@ -61,7 +61,7 @@ void DefaultRestController::power(int base, int exponent)
 }}}
 
 
-= config for rest service in {{{application.xml}}} =
+= Config for rest service in {{{application.xml}}} =
 {{{
 <restcontrollers>
                 <restcontroller class="DefaultRestController" urlpath="/rest/path/" name="rest1">
