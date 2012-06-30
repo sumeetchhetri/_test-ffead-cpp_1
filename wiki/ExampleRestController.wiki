@@ -59,3 +59,40 @@ void DefaultRestController::power(int base, int exponent)
 }
 
 }}}
+
+
+= config for rest service in {{{application.xml}}} =
+{{{
+<restcontrollers>
+                <restcontroller class="DefaultRestController" urlpath="/rest/path/" name="rest1">
+                        <restfunction name="addNumbers" alias="add" meth="GET">
+                                <param type="int"/>
+                                <param type="int"/>
+                        </restfunction>
+                </restcontroller>
+                <restcontroller class="DefaultRestController" urlpath="/rest/path1/" name="rest2">
+                        <restfunction name="addNumbers" alias="+" meth="GET">
+                                <param type="int"/>
+                                <param type="int"/>
+                        </restfunction>
+                </restcontroller>
+                <restcontroller class="DefaultRestController" name="rest3">
+                        <restfunction name="addNumbers" alias="ad" meth="GET">
+                                <param type="int"/>
+                                <param type="int"/>
+                        </restfunction>
+                </restcontroller>
+                <restcontroller class="DefaultRestController">
+                        <restfunction name="power" meth="GET" baseUrl="/rest/controller/base{1}/power/exp{2}">
+                                <param type="int"/>
+                                <param type="int"/>
+                        </restfunction>
+                </restcontroller>
+                <restcontroller class="DefaultRestController">
+                        <restfunction name="addNumbers" meth="GET">
+                                <param type="int"/>
+                                <param type="int"/>
+                        </restfunction>
+                </restcontroller>
+        </restcontrollers>
+}}}
