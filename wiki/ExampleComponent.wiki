@@ -1,7 +1,7 @@
 #summary Example Component File
 #labels ffead,cpp,example,implementation,component,service,business,logic
 
-= example.cmp =
+= Example Component Configuration =
 {{{
 #The Component Name, Should be unique
 @CMP_NAME=TEST_BEAN
