@@ -1,7 +1,7 @@
 #summary An Example .dcp file
 #labels ffead,cpp,dcp,dynamic,page
 
-= example.dcp =
+= Example Dynamic C++ Page =
 {{{
 <DCPH>
 #include "string"
