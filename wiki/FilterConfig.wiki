@@ -1,6 +1,7 @@
 #summary Configuration file for Filters
 #labels cpp,web,filter,configuration,request,response,ffead
 
+= Filter Configuration =
 {{{
 <!--The list of filters configured in the application-->
 <app>
