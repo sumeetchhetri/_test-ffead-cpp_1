@@ -1,7 +1,7 @@
 #summary Configuration for Ajax support
 #labels ajax,configuration,cpp,ffead
 
-= afc.properties =
+= Ajax Configuration  =
 
 {{{
 #The Objects exposed
