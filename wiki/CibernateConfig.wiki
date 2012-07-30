@@ -1,7 +1,7 @@
 #summary Configuration for Cibernate (ORM)
 #labels ffead,cpp,cibernate,orm,configuration,hasmany,hasone,relation,object,table
 
-= cibernate.xml=
+= Cibernate ORM Configuration =
 {{{
 <cibernate>
 	<config>
