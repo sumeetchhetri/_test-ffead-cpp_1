@@ -1,7 +1,7 @@
 #summary Configure Applications
 #labels ffead,cpp,application,configuration,controller,template,dynamic,view,dview,filter
 
-= application.xml =
+= Application Level Configuration =
 {{{
 <app>
 	<controllers>
