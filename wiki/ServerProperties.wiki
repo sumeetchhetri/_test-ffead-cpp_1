@@ -1,7 +1,7 @@
 #summary The properties for the Application Server.
 #labels ffead,cpp,server,property,configuration
 
-= server.properties=
+= Server Properties =
 {{{
 # The default Application name
 DEF_PATH=default
