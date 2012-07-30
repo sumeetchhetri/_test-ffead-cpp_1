@@ -1,6 +1,7 @@
 #summary Configuration for Security
 #labels cpp,web,security,rolebased
 
+= Security Configuration =
 {{{
 <!--The list of security parameters in the application-->
 <app>
