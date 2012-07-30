@@ -1,7 +1,7 @@
 #summary An Example .tpe file
 #labels ffead,cpp,template,example,file
 
-= example.tpe =
+= Example Template file =
 {{{
 <html>
    <head>
