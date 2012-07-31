@@ -3,30 +3,26 @@
 
 = Quick Start Guide = 
 <font size="3" face="Georgia, Arial">
-  * Download the tar file and extract it to the location of your choice.
+  BINARY FILE
+  * Download the ffead-server-{os}-bin-v{version}.zip file and extract it to the location of your choice.
   * Visit the [http://code.google.com/p/ffead-cpp/wiki/InstallationDirections Installation Directions] page for more information
-  * Go the folder ffead-server-unix/Debug/ffead-server.
-  * Create a new folder in ffead-server/web i.e, appname
-  * Modify ffead-server/resources/ffead-server.prop to set the port, default application, number of server processes and other essential attributes [http://code.google.com/p/ffead-cpp/wikiffead-serverProperties Server-Properties]
-  * Create ffead-server/resources/log.properties file to enable custom logging for the applications [http://code.google.com/p/ffead-cpp/wiki/LoggerProperties Logger-Properties]
-  * Create new folders /lib /components /config /dcp /include under your newly created application folder (appname)
-   * ffead-server/web/appname
-    # /lib
-    # /include
-    # /dcp
-    # /config
-    # /components
-  * Drop all your application level header files intended for Serialization and Reflection enabled support in the /appname/include folder. All files targeted for Web-Services, Ajax, Database mapping, Components, Controllers, Templates, Views etc should have their header definition files present in the /appname/include folder. 
-  * Drop the shared library of your application inside the /appname/lib folder.
-  * Create/Drop your html/tpe files directly in the /appname folder [http://code.google.com/p/ffead-cpp/wiki/ExampletpeFile Example-tpe-File]
-  * Create/Drop your dcp files in the /appname/dcp folder [http://code.google.com/p/ffead-cpp/wiki/ExampledcpFile Example-dcp-File]
-  * Create /appname/config/cibernate.xml for ORM support [http://code.google.com/p/ffead-cpp/wiki/CibernateConfig Cibernate-Configuration]
-  * Create /appname/config/application.xml for Dynamic C++ pages,Templates and Dynamic view support [http://code.google.com/p/ffead-cpp/wiki/ApplicationLevelConfig Application-Level-Configuration]
-  * Create /appname/config/afc.properties for Ajax Support [http://code.google.com/p/ffead-cpp/wiki/AjaxConfig Ajax-Configuration]
-  * Create /appname/config/ws.xml for Web-Service Support [http://code.google.com/p/ffead-cpp/wiki/WebServicesConfig Web-Services-Configuration]
-  * For Business Entities or Business Driven Beans create your custom {{{*}}}.cmp files and drop them inside the /appname/components folder [http://code.google.com/p/ffead-cpp/wiki/ExampleComponent Example-Component]
-  * For Dependency Injection create a file named /appname/config/depInj.xml [http://code.google.com/p/ffead-cpp/wiki/DependencyInjection Example depInj.xml]
-  * Create /appname/config/messaging.xml for Messaging support [http://code.google.com/p/ffead-cpp/wiki/MessagingConfig Messaging-Configuration]
-  * Create a new HTML page named index.html and place it in your /appname folder
-  * Restart the Web Server
-  * Enter http://localhost:port/appname/ and Watch the magic!!! </font>
+  * Go the folder ffead-server.
+  * Modify ffead-server/resources/server.prop to set the port, default application, number of server processes and other essential attributes [http://code.google.com/p/ffead-cpp/wikiffead-serverProperties Server-Properties]
+  * Modify ffead-server/resources/log.properties file to enable custom logging for the applications [http://code.google.com/p/ffead-cpp/wiki/LoggerProperties Logger-Properties]
+  * chmod 777 ffead-server/server.sh
+  * Execute ./server.sh start the Web Server
+  * Enter http://localhost:port/index.html and Watch the magic!!! 
+
+  SOURCE FILE
+  * Download the ffead-server-{os}-src-v{version}.zip file and extract it to the location of your choice.
+  * Visit the [http://code.google.com/p/ffead-cpp/wiki/InstallationDirections Installation Directions] page for more information
+  * Go the folder ffead-server-{os}/Debug or ffead-server-{os}/Release folder.
+  * chmod 777 makeAll.sh
+  * Execute the ./makeAll.sh file, it will compile and build the complete project and all required web applications
+  * Go to the ffead-server-{os}/Debug/ffead-server or ffead-server-{os}/Release/ffead-server folder
+  * Modify ffead-server/resources/server.prop to set the port, default application, number of server processes and other essential attributes [http://code.google.com/p/ffead-cpp/wikiffead-serverProperties Server-Properties]
+  * Modify ffead-server/resources/log.properties file to enable custom logging for the applications [http://code.google.com/p/ffead-cpp/wiki/LoggerProperties Logger-Properties]
+  * chmod 777 ffead-server/server.sh
+  * Execute ./server.sh start the Web Server
+  * Enter http://localhost:port/index.html and Watch the magic!!! 
+</font>
