@@ -4,9 +4,8 @@
 = {{{ThreadPoolTest.cpp}}} =
 {{{
 using namespace std;
-using namespace boost;
 #include "ThreadPool.h"
-#include "boost/lexical_cast.hpp"
+#include "CastUtil.h"
 
 class MyTask : public Task
 {
@@ -20,7 +19,7 @@ public:
 	}
 	string toString()
 	{
-		return ("Task No "+lexical_cast<string>(j));
+		return ("Task No "+CastUtil::lexical_cast<string>(j));
 	}
 };
 
