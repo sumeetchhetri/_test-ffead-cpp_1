@@ -60,9 +60,15 @@ DB_CONN_POOL_SIZE=
 #Where to store the session state Browser cookies/Server side file
 SESS_STATE=server
 
+#When to timeout the session
+SESS_TIME_OUT=3600
+
 #Compilers are generally disabled on production deployments
-#Start server with COMPILE_ENABLED=true on Development servers
-#and move the code to Production changing the flag COMPILE_ENABLED=false
+#Start server with DEV_MODE=true on Development servers
+#and move the code to Production changing the flag DEV_MODE=false
 #The code would not be generated at run-time on server restart now
-COMPILE_ENABLED=true
+DEV_MODE=true
+
+#If you want to bind the server to a particulat IP
+IP_ADDR=
 }}}
