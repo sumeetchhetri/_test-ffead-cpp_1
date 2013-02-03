@@ -24,12 +24,13 @@
   * <a href="http://www.codeproject.com/KB/recipes/JSON_Spirit.aspx"><b>JSON-SPIRIT</b></a> source and header files are already included in the source code distribution
   * Also included *prototype.js* in source for AJAX support
   * Go to the ffead-server/Release or ffead-server/Debug depending on whether you need to debug the server code
-  * Open terminal and type *make all*
+  * Open terminal and type "make all" and "make build-apps" to build the server and the default applications provided
   * This will create the distribution folder named ffead-server inside ffead-server/Release or ffead-server/Debug folders accordingly
-  * Place your application shared library inside the ffead-server/Release/ffead-server or ffead-server/Debug/ffead-server folder.
-  * Place your web application specific files inside the ffead-server/Release/ffead-server/web folder inside a folder with your application name
-  * Type *./server.sh* when inside the ffead-server folder to start the application server
-  * A default application is already provided for your reference inside the ffead-server/web folder
+  * Type ./server.sh when inside the ffead-server folder to start the application server
+  * A default application is already provided for your reference inside the ffead-server/web folder, this application is served at urlpath /
+  * 2 other applications are provided, urlpath /flexApp and /oauthApp
   * To compile the default application shared library go to the ffead-server/Release/ffead-server/web/default/src/Debug folder and run "make all"
   * Copy the libdefault library to the ffead-server/Release/ffead-server/lib folder
+  * Place your application shared library inside the ffead-server/Release/ffead-server/lib or ffead-server/Debug/ffead-server/lib folder.
+  * Place your web application specific files inside the ffead-server/Release/ffead-server/web folder inside a folder with your application name
 </font>
