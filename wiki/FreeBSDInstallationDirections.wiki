@@ -11,13 +11,14 @@
   * <a href="http://www.codeproject.com/KB/recipes/JSON_Spirit.aspx"><b>JSON-SPIRIT</b></a> source and header files are already included in the source code distribution
   * Also included *prototype.js* in source for AJAX support
   * Go to the ffead-server-freebsd/Release or ffead-server-freebsd/Debug depending on whether you need to debug the server code
-  * Open terminal and type *gmake all*
-  * This will create the distribution folder named ffead-server-freebsd inside ffead-server-freebsd/Release or ffead-server-freebsd/Debug folders accordingly
-  * Place your application shared library inside the ffead-server-freebsd/Release/ffead-server-freebsd or ffead-server-freebsd/Debug/ffead-server-freebsd folder.
-  * Place your web application specific files inside the ffead-server-freebsd/Release/ffead-server-freebsd/web folder inside a folder with your application name
-  * Type *./server.sh* when inside the ffead-server-freebsd folder to start the application server
-  * A default application is already provided for your reference inside the ffead-server-freebsd/web folder
-  * To compile the default application shared library go to the ffead-server-freebsd/Release/ffead-server-freebsd/web/default/src/Debug folder and run "gmake all"
-  * Copy the libdefault library to the ffead-server-freebsd/Release/ffead-server-freebsd/lib folder
+  * Open terminal and type "gmake all" and "gmake build-apps" to build the server and the default applications provided
+  * This will create the distribution folder named ffead-server inside ffead-server/Release or ffead-server/Debug folders accordingly
+  * Type ./server.sh when inside the ffead-server folder to start the application server
+  * A default application is already provided for your reference inside the ffead-server/web folder, this application is served at urlpath /
+  * 2 other applications are provided, urlpath /flexApp and /oauthApp
+  * To compile the default application shared library go to the ffead-server/Release/ffead-server/web/default/src/Debug folder and run "gmake all"
+  * Copy the libdefault library to the ffead-server/Release/ffead-server/lib folder
+  * Place your application shared library inside the ffead-server/Release/ffead-server/lib or ffead-server/Debug/ffead-server/lib folder.
+  * Place your web application specific files inside the ffead-server/Release/ffead-server/web folder inside a folder with your application name
   * Remember all installation files(makefile,subdir.mk) assume the ports are installed to the /usr/local/lib directory, in case you choose custom settings during installation of dependencies then make sure to change all files to include the -L/usr/local/lib to -L/location/of your/choice
 </font>
