@@ -33,36 +33,78 @@
 	</security>
 	<restcontrollers>
 		<restcontroller class="DefaultRestController" urlpath="/rest/path/" name="rest1">
+			<restfunction name="addNumbers" alias="add/{1}/{2}" meth="GET">
+				<param type="int" name="1" from="path"/>
+				<param type="int" name="2" from="path"/>
+			</restfunction>
+		</restcontroller>
+		<restcontroller class="DefaultRestController" urlpath="/rest/reqparam/" name="rest1">
 			<restfunction name="addNumbers" alias="add" meth="GET">
-				<param type="int"/>
-				<param type="int"/>
+				<param type="int" name="1" from="reqparam"/>
+				<param type="int" name="2" from="reqparam"/>
+			</restfunction>
+		</restcontroller>
+		<restcontroller class="DefaultRestController" urlpath="/rest/postparam/" name="rest1">
+			<restfunction name="addNumbers" alias="add" meth="POST">
+				<param type="int" name="1" from="postparam"/>
+				<param type="int" name="2" from="postparam"/>
+			</restfunction>
+		</restcontroller>
+		<restcontroller class="DefaultRestController" urlpath="/rest/header/" name="rest1">
+			<restfunction name="addNumbers" alias="add" meth="GET">
+				<param type="int" name="1" from="header"/>
+				<param type="int" name="2" from="header"/>
 			</restfunction>
 		</restcontroller>
 		<restcontroller class="DefaultRestController" urlpath="/rest/path1/" name="rest2">
-			<restfunction name="addNumbers" alias="+" meth="GET">
-				<param type="int"/>
-				<param type="int"/>
+			<restfunction name="addNumbers" alias="+/{1}/{2}" meth="GET">
+				<param type="int" name="1" from="path"/>
+				<param type="int" name="2" from="path"/>
 			</restfunction>
 		</restcontroller>
 		<restcontroller class="DefaultRestController" name="rest3">
-			<restfunction name="addNumbers" alias="ad" meth="GET">
-				<param type="int"/>
-				<param type="int"/>
+			<restfunction name="addNumbers" alias="ad/{1}/{2}" meth="GET">
+				<param type="int" name="1" from="path"/>
+				<param type="int" name="2" from="path"/>
 			</restfunction>
 		</restcontroller>
 		<restcontroller class="DefaultRestController">
 			<restfunction name="power" meth="GET" baseUrl="/rest/controller/base{1}/power/exp{2}">
-				<param type="int"/>
-				<param type="int"/>
+				<param type="int" name="1" from="path"/>
+				<param type="int" name="2" from="path"/>
 			</restfunction>
 		</restcontroller>
 		<restcontroller class="DefaultRestController">
-			<restfunction name="addNumbers" meth="GET">
-				<param type="int"/>
-				<param type="int"/>
+			<restfunction name="addNumbers" meth="GET" alias="addNumbers/{1}/{2}">
+				<param type="int" name="1" from="path"/>
+				<param type="int" name="2" from="path"/>
+			</restfunction>
+		</restcontroller>
+		<restcontroller class="DefaultRestController" name="restvec">
+			<restfunction name="testVector" alias="tstvec" meth="POST">
+				<param type="vector&lt;int&gt;" from="body"/>
+			</restfunction>
+		</restcontroller>
+		<restcontroller class="DefaultRestController" name="restvecobj">
+			<restfunction name="testVectorObject" alias="tstvecobj" meth="POST" icontentType="application/json">
+				<param type="vector&lt;TestMany&gt;" from="body"/>
+			</restfunction>
+		</restcontroller>
+		<restcontroller class="DefaultRestController" name="restobj">
+			<restfunction name="testObject" alias="tstobj" meth="POST" icontentType="application/json">
+				<param type="TestMany" from="body"/>
+			</restfunction>
+		</restcontroller>
+		<restcontroller class="DefaultRestController" name="restvecobj">
+			<restfunction name="testVectorObject" alias="tstvecobj.xml" meth="POST" icontentType="application/xml">
+				<param type="vector&lt;TestMany&gt;" from="body"/>
+			</restfunction>
+		</restcontroller>
+		<restcontroller class="DefaultRestController" name="restobj">
+			<restfunction name="testObject" alias="tstobj.xml" meth="POST" icontentType="application/xml">
+				<param type="TestMany" from="body"/>
 			</restfunction>
 		</restcontroller>
 	</restcontrollers>
 </app>
-
 }}}
