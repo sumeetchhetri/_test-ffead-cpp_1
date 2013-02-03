@@ -14,12 +14,12 @@
   * Enter http://localhost:port/index.html and Watch the magic!!! 
 
   SOURCE FILE
-  * Download the ffead-server-{os}-src-v{version}.zip file and extract it to the location of your choice.
+  * Download the ffead-server-v{version}.zip file and extract it to the location of your choice.
   * Visit the [http://code.google.com/p/ffead-cpp/wiki/InstallationDirections Installation Directions] page for more information
-  * Go the folder ffead-server-{os}/Debug or ffead-server-{os}/Release folder.
+  * Go the folder ffead-server/Debug or ffead-server/Release folder.
   * chmod 777 makeAll.sh
   * Execute the ./makeAll.sh file, it will compile and build the complete project and all required web applications
-  * Go to the ffead-server-{os}/Debug/ffead-server or ffead-server-{os}/Release/ffead-server folder
+  * Go to the ffead-server/Debug/ffead-server or ffead-server/Release/ffead-server folder
   * Modify ffead-server/resources/server.prop to set the port, default application, number of server processes and other essential attributes [http://code.google.com/p/ffead-cpp/wikiffead-serverProperties Server-Properties]
   * Modify ffead-server/resources/log.properties file to enable custom logging for the applications [http://code.google.com/p/ffead-cpp/wiki/LoggerProperties Logger-Properties]
   * chmod 777 ffead-server/server.sh
