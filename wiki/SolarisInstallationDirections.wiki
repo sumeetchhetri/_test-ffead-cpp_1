@@ -19,7 +19,8 @@
   * Go to the ffead-server-solaris/Release or ffead-server-solaris/Debug depending on whether you need to debug the server code
   * Open terminal and type "gmake all" and "gmake build-apps" to build the server and the default applications provided
   * This will create the distribution folder named ffead-server inside ffead-server/Release or ffead-server/Debug folders accordingly
-  * Type ./server.sh when inside the ffead-server folder to start the application server
+  * Type ./server.sh when inside the ffead-server/Release/ffead-server folder to start the application server
+  * Go to the ffead-server/Release/ffead-server/tests folder and run ./runTests.sh, this will do an initial sanity of the capabilities of the framework and also validate the same
   * A default application is already provided for your reference inside the ffead-server/web folder, this application is served at urlpath /
   * 2 other applications are provided, urlpath /flexApp and /oauthApp
   * To compile the default application shared library go to the ffead-server/Release/ffead-server/web/default/src/Debug folder and run "gmake all"
