@@ -9,9 +9,8 @@
 </font>
 
 
+= {{{test.csv}}} =
 {{{
-test.csv
-
 ENABLED = is this test enabled
 SHOW_CONTENT = display content on console
 REQUEST = the HTTP method followed by the request URL
@@ -57,8 +56,8 @@ Y,Y,GET /flexApp/getJSON.json,200,,,,
 }}}
 
 
+= {{{testValues.prop}}} =
 {{{
-testValues.prop
 
 SERVER_IP_ADDRESS=
 SERVER_PORT=
