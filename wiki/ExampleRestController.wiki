@@ -218,22 +218,22 @@ void DefaultRestController::testUploadFileMulti2(vector<ifstream*> vifs, string 
 		</restcontroller>
 		<restcontroller class="DefaultRestController" name="restvec">
 			<restfunction name="testVector" alias="tstvec" meth="POST">
-				<param type="vector&lt;int&gt;" from="body"/>
+				<param type="vector-of-int" from="body"/>
 			</restfunction>
 		</restcontroller>
 		<restcontroller class="DefaultRestController" name="restvecobj">
 			<restfunction name="testVectorObject" alias="tstvecobj" meth="POST" icontentType="application/json">
-				<param type="vector&lt;TestMany&gt;" from="body"/>
+				<param type="vector-of-TestMany" from="body"/>
 			</restfunction>
 		</restcontroller>
 		<restcontroller class="DefaultRestController" name="restobj">
-			<restfunction name="testObject" alias="tstobj" meth="POST" icontentType="application/json">
+			<restfunction name="testObject" alias="tstobj" meth="POST" icontentType="application/json" ocontentType="application/json">
 				<param type="TestMany" from="body"/>
 			</restfunction>
 		</restcontroller>
 		<restcontroller class="DefaultRestController" name="restvecobj">
 			<restfunction name="testVectorObject" alias="tstvecobj.xml" meth="POST" icontentType="application/xml">
-				<param type="vector&lt;TestMany&gt;" from="body"/>
+				<param type="vector-of-TestMany" from="body"/>
 			</restfunction>
 		</restcontroller>
 		<restcontroller class="DefaultRestController" name="restobj">
