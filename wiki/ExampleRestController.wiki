@@ -161,6 +161,7 @@ void DefaultRestController::testUploadFileMulti2(vector<ifstream*> vifs, string 
 	response->addHeaderValue(HttpResponse::ContentType, ContentTypes::CONTENT_TYPE_TEXT_PLAIN);
 	response->setContent(vals);
 	cout << "Processed input request inside DefaultRestController for testUploadFileMulti2..." + response->generateResponse() << endl;
+}
 }}}
 
 
