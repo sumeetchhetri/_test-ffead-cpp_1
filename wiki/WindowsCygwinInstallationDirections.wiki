@@ -21,10 +21,10 @@
   * Make sure *boost* libraries are installed on your system
   * Install *Unix-ODBC* and required odbc files for *MySQL* dependency
   * Install *Open-SSL* as well
-  * <a href="http://www.codeproject.com/KB/recipes/JSON_Spirit.aspx"><b>JSON-SPIRIT</b></a> source and header files are already included in the source code distribution
   * Also included *prototype.js* in source for AJAX support
   * Go to the ffead-server/Release or ffead-server/Debug depending on whether you need to debug the server code
   * Open terminal and type "make all" and "make build-apps" to build the server and the default applications provided
+  * *From version 1.8 onwards you can also select modules to build within ffead using the make modules={comma separated module list} all command, for a complete list of modules names please refer Modules, for e.g, to only build modules webservice,binserialize and distocache use the command "make modules=webservice,binserialize,distocache all"*
   * This will create the distribution folder named ffead-server inside ffead-server/Release or ffead-server/Debug folders accordingly
   * Type ./server.sh when inside the ffead-server/Release/ffead-server folder to start the application server
   * Go to the ffead-server/Release/ffead-server/tests folder and run ./runTests.sh, this will do an initial sanity of the capabilities of the framework and also validate the same
