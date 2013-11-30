@@ -1,5 +1,5 @@
 #summary An Example Rest Controller Implementation
-#labels restcontroller,implementation,Featured
+#labels restcontroller,implementation,Featured,fileupload,multipart
 
 = {{{DefaultRestController.h}}} =
 {{{
