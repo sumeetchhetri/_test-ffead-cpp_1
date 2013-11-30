@@ -1,0 +1,3 @@
+#summary Multipart File Upload Support
+
+Please refer the [https://code.google.com/p/ffead-cpp/wiki/ExampleRestController RestController] page for more information on how to configure multipart file upload
