@@ -13,6 +13,8 @@
 		<dsn>Data Source Name</dsn>
                 <!--The DB connection pool size-->
 		<pool-size>5</pool-size>
+                <!--The database dialect-->                 
+                <dialect>MySQLDialect</dialect>
 	</config>
 	<tables>
                 <!--The Table to Objcet Mapping-->
