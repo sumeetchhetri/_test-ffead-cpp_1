@@ -1,0 +1,19 @@
+#summary Module Names
+
+= Modules = 
+<font size="3" face="Georgia, Arial">
+  * webservice - enables web service support
+  * cibernate - enables cibernate orm support
+  * jobs - enables Jobs support
+  * distocache - enables in-built distributed cache ([https://code.google.com/p/distocache/ distocache]) support
+  * xmlserialize - enables XML serialization support
+  * binserialize - enables Binary serialization support
+  * dcp - enables Dynamic C++ Pages support
+  * dview - enables Dynamic Views support
+  * tpe - enables Template based view support
+  * appflow - enables Application Flow support
+  * interpreter - enables Interpreter support
+  * methinvoker - enables Method Invoker support
+  * msghandler - enables Message Handler support
+  * component - enables Component(Enterprise Beans) support
+</font>
