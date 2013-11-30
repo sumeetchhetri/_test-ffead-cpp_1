@@ -7,7 +7,7 @@
 #include "TestMany.h"
 #include "TestForm.h"
 #include "TestSTLs.h"
-#include "Serialize.h"
+#include "BinarySerialize.h"
 #include "XMLSerialize.h"
 #include "JSONSerialize.h"
 
@@ -55,7 +55,7 @@ int main() {
 	yo.c = 1.2;
 	tm.vyo.push_back(yo);
 
-	Serialize ser;
+	BinarySerialize ser;
 	string binstr = ser.serialize<TestMany>(tm);
 
 	TestMany tmn = ser.unserialize<TestMany>(binstr);
