@@ -1,9 +1,10 @@
 #summary Configuration for Ajax support
 #labels ajax,configuration,cpp,ffead
 
-= Ajax Configuration  =
+= Ajax Configuration inside application.xml  =
 
 {{{
-#The Interfaces or Methods exposed
-INTF=Expose
+<ajax-interfaces>
+      <ajax-interface url="/expose" class="Expose"/>
+</ajax-interfaces>
 }}}
