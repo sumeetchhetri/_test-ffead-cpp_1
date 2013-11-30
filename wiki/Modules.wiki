@@ -16,4 +16,5 @@
   * methinvoker - enables Method Invoker support
   * msghandler - enables Message Handler support
   * component - enables Component(Enterprise Beans) support
+  * scripthandler - enables scripting languages support (For more information please refer [https://code.google.com/p/ffead-cpp/wiki/ScriptingLanguageSupport ScriptingLanguageSupport]
 </font>
