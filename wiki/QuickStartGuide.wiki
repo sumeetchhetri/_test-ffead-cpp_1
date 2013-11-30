@@ -22,7 +22,7 @@
   * Execute the ./makeAll.sh file, it will compile and build the complete project and all required web applications
   * Go to the ffead-server/Debug/ffead-server or ffead-server/Release/ffead-server folder
   * Modify ffead-server/resources/server.prop to set the port, default application, number of server processes and other essential attributes [http://code.google.com/p/ffead-cpp/wikiffead-serverProperties Server-Properties]
-  * Modify ffead-server/resources/log.properties file to enable custom logging for the applications [http://code.google.com/p/ffead-cpp/wiki/LoggerProperties Logger-Properties]
+  * Modify ffead-server/resources/logging.xml file to enable custom logging for the applications [http://code.google.com/p/ffead-cpp/wiki/LoggerProperties Logger-Properties]
   * chmod 777 ffead-server/server.sh
   * Execute ./server.sh start the Web Server
   * Go to the ffead-server/tests folder and run ./runTests.sh, this will do an initial sanity of the capabilities of the framework and also validate the same
