@@ -43,5 +43,5 @@ void TestCronBasedJob::runJob() {
 {{{
 <job-procs>
 		<job-proc cron="* * * * *" name="testCronJob" class="TestCronBasedJob" method="runJob"/>
-	</job-procs>
+</job-procs>
 }}}
